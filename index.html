@@ -1,0 +1,604 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/swiper.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Appello</title>
+</head>
+
+<body>
+    <div class="preloader">
+        <div class="loading"></div>
+    </div>
+    <div class="wrapper">
+
+        <header class="header">
+            <nav class="header-nav">
+                <div class="header-nav__container header-nav__body">
+                    <div class="header-nav__logoblock">
+                        <a href="#" class="header-nav__logo"><img src="img/logo.svg" alt="Logotype"></a>
+                        <button onclick="showNavBar()" class="header-nav__burger"><svg width="20" height="16"
+                                viewBox="0 0 20 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <rect width="20" height="2" fill="white"></rect>
+                                <rect y="7" width="15" height="2" fill="white"></rect>
+                                <rect y="14" width="20" height="2" fill="white"></rect>
+                            </svg></button>
+                    </div>
+                    <ul class="header-nav__list" id="NavBar">
+                        <li class="header-nav__item"><a href="#" class="header-nav__link _text">Home</a></li>
+                        <li class="header-nav__item"><a href="#" class="header-nav__link _text">Portfolio</a></li>
+                        <li class="header-nav__item"><a href="#" class="header-nav__link _text">Process</a></li>
+                        <li class="header-nav__item"><a href="#" class="header-nav__link _text">Team</a></li>
+                        <li class="header-nav__item"><a href="#" class="header-nav__link _text">Resources</a></li>
+                        <li class="header-nav__item">
+                            <a href="#" class="header-nav__button _text">Get project quote</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+            <div class="header-intro">
+                <div class="header-intro__container">
+                    <div class="header-intro__body">
+                        <h1 class="header-intro__title">Leaders in Software <br>
+                            Design & Development</h1>
+                        <p class="header-intro__text _text">Establishing a technology company takes a strong software
+                            team
+                            to deliver on what needs to be done.</p>
+                        <a href="#" class="header-intro__button _button">View our work</a>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <main class="main">
+            <section class="project-desc">
+                <div class="project-desc__container">
+                    <div class="project-desc__body">
+                        <div class="project-desc__desctiption">
+                            <h1 class="project-desc__title _inTitle">Your reliable web and app development partner</h1>
+                            <p class="project-desc__text _text">We make successful products that turn great ideas into
+                                user-friendly solutions for consumers and businesses.</p>
+                        </div>
+                        <span class="project-desc__line"></span>
+                        <ul class="project-desc__list">
+                            <li class="project-desc__item _text">Completely tailored software.</li>
+                            <li class="project-desc__item _text">Daily support with project manager.</li>
+                            <li class="project-desc__item _text">Projects delivered on time, always.</li>
+                            <li class="project-desc__item _text">Testing and quality assurance.</li>
+                            <li class="project-desc__item _text">Professional marketing expertise.</li>
+                            <li class="project-desc__item _text">Transparent costs and support.</li>
+                        </ul>
+
+                    </div>
+                </div>
+            </section>
+            <section class="your-stage">
+                <div class="your-stage__container">
+                    <div class="your-stage__description">
+                        <h2 class="your-stage__title _title">Where are you now?</h2>
+                        <p class="your-stage__text _text">Use the tabs below to identify what stage you’re at so we can
+                            help
+                            you to move on to the next phase of your project.</p>
+                    </div>
+                    <div class="your-stage__tabs stage-tabs">
+                        <a id="1" onclick="changeActiveTab(1)"
+                            class="stage-tabs__text _inTitle stage-tabs__active">Design</a>
+                        <a id="2" onclick="changeActiveTab(2)" class="stage-tabs__text _inTitle">Develop</a>
+                        <a id="3" onclick="changeActiveTab(3)" class="stage-tabs__text _inTitle">Launch</a>
+                    </div>
+                    <div id="tab-1" class="your-stage__body stage-body stage-body__active">
+                        <div class="stage-body__item">
+                            <p class="stage-body__title">1. Research</p>
+                            <p class="stage-body__text">We can help you to better understand your target audience,
+                                enabling you to create a more powerful value proposition for your business.</p>
+                        </div>
+                        <div class="stage-body__item">
+                            <p class="stage-body__title">2. Requirements</p>
+                            <p class="stage-body__text">Based on research insights, we can help you to determine how
+                                your product and service should function.</p>
+                        </div>
+                        <div class="stage-body__item">
+                            <p class="stage-body__title">3. UI Design</p>
+                            <p class="stage-body__text">We’re able to create unique and aesthetically pleasing visual
+                                design solutions that fulfil both your user needs and business goals.</p>
+                        </div>
+                        <div class="stage-body__item">
+                            <p class="stage-body__title">4. Prototyping</p>
+                            <p class="stage-body__text">We can provide you with a clickable prototype so you can test
+                                and play with your product; allowing you to get a better feel for the user experience.
+                            </p>
+                        </div>
+                    </div>
+                    <div id="tab-2" class="your-stage__body stage-body">
+                        <div class="stage-body__item">
+                            <p class="stage-body__title">1. Define</p>
+                            <p class="stage-body__text">We can take your visual product requirements and create a clear
+                                technical plan of action that our engineers can use to build your product.</p>
+                        </div>
+                        <div class="stage-body__item">
+                            <p class="stage-body__title">2. Front-End</p>
+                            <p class="stage-body__text">We use the latest emerging technology such as React Native,
+                                AR-Core, JavaScript, ReactJS, Swift and Flutter to code your product’s front-end
+                                infrastructure.</p>
+                        </div>
+                        <div class="stage-body__item">
+                            <p class="stage-body__title">3. Back-End</p>
+                            <p class="stage-body__text">We have skilled back-end engineers that can connect your product
+                                to API protocols and scalable instances so you can deploy your product worldwide.</p>
+                        </div>
+                        <div class="stage-body__item">
+                            <p class="stage-body__title">4. Support</p>
+                            <p class="stage-body__text">We support existing projects and create monthly reports for your
+                                software to ensure you’re up to date with the latest technology available.
+                            </p>
+                        </div>
+                    </div>
+                    <div id="tab-3" class="your-stage__body stage-body">
+                        <div class="stage-body__item">
+                            <p class="stage-body__title">1. Audience Segment</p>
+                            <p class="stage-body__text">We can help you to better target your users so you can maximise
+                                your marketing investment's ROI; effectively growing your user base.</p>
+                        </div>
+                        <div class="stage-body__item">
+                            <p class="stage-body__title">2. App Store Optimisation</p>
+                            <p class="stage-body__text">We apply ASO strategies to every product we create, so you can
+                                maximise your marketing spend via organic exposure on the app store.</p>
+                        </div>
+                        <div class="stage-body__item">
+                            <p class="stage-body__title">3. Growth Hacking</p>
+                            <p class="stage-body__text">We can create a strong social buzz and awareness around your
+                                product by leveraging PR channels such as TV, Radio and Sites like BuzzFeed.</p>
+                        </div>
+                        <div class="stage-body__item">
+                            <p class="stage-body__title">4. Paid Social Advertising</p>
+                            <p class="stage-body__text">We can help you optimise your ad spend on social media platforms
+                                such as Facebook and Instagram; gaining you many new users within the shortest time
+                                possible.
+                            </p>
+                        </div>
+                    </div>
+                    <a href="#" class="your-stage__button _button">Contact us</a>
+                </div>
+            </section>
+            <section class="our-works">
+                <div class="projects-stats">
+                    <div class="projects-stats__container">
+                        <h2 class="projects-stats__title _title">We’re proud of our work</h2>
+                        <ul class="projects-stats__list">
+                            <li class="projects-stats__item _title">50+<span
+                                    class="projects-stats__text _text">Successfully
+                                    completed
+                                    projects</span></li>
+                            <li class="projects-stats__item _title">35+<span class="projects-stats__text _text">Happy
+                                    and
+                                    appreciative
+                                    customers</span></li>
+                            <li class="projects-stats__item _title">10<span class="projects-stats__text _text">Combined
+                                    years of
+                                    experience</span></li>
+                            <li class="projects-stats__item _title">23<span
+                                    class="projects-stats__text _text">Experienced
+                                    and
+                                    talented
+                                    workers</span></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="our-works__content ourWorks-content">
+                    <div class="ourWorks-content__container">
+                        <div class="ourWorks-content__body">
+                            <div class="ourWorks-content__card ourWorks-card">
+                                <div class="ourWorks-card__img"><img src="img/projects-stats/IMAGE.png" alt=""></div>
+                                <div class="ourWorks-card__description">
+                                    <h3 class="ourWorks-card__title _inTitle">Eyetelligence – AI-based Eye Health</h3>
+                                    <p class="ourWorks-card__text _text">Eyetelligence is a medtech company using AI
+                                        based
+                                        software to recognise eye diseases. Appello software developed their website
+                                        which
+                                        has just been released.</p>
+                                </div>
+                            </div>
+                            <div class="ourWorks-content__card ourWorks-card">
+                                <div class="ourWorks-card__img"><img src="img/projects-stats/IMAGE-1.png" alt=""></div>
+                                <div class="ourWorks-card__description">
+                                    <h3 class="ourWorks-card__title _inTitle">Give + Get is a modern charity app. </h3>
+                                    <p class="ourWorks-card__text _text">“Give”, while joining a community of active
+                                        people who complete challenges and
+                                        reap the
+                                        rewards they offer; “Get”.</p>
+                                </div>
+                            </div>
+                            <div class="ourWorks-content__card ourWorks-card">
+                                <div class="ourWorks-card__img"><img src="img/projects-stats/IMAGE-2.png" alt=""></div>
+                                <div class="ourWorks-card__description">
+                                    <h3 class="ourWorks-card__title _inTitle">Voken – Shared Childcare App</h3>
+                                    <p class="ourWorks-card__text _text">Voken lets people arrange childcare with
+                                        families
+                                        they trust, earn tokens and use for your own requests.</p>
+                                </div>
+                            </div>
+                            <div class="ourWorks-content__card ourWorks-card">
+                                <div class="ourWorks-card__img"><img src="img/projects-stats/IMAGE-3.png" alt=""></div>
+                                <div class="ourWorks-card__description">
+                                    <h3 class="ourWorks-card__title _inTitle">Chattii – Disability Dating App</h3>
+                                    <p class="ourWorks-card__text _text">Chattii is born from the need to provide a
+                                        space
+                                        for people living with disabilities to connect, chat, and explore their love
+                                        life.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <a href="" class="ourWorks-content__button _button">See more</a>
+
+                    </div>
+                </div>
+            </section>
+            <section class="clients">
+                <div class="clients__container">
+                    <h3 class="clients__title _title">We value our relationships</h3>
+                    <p class="clients__text _text">Over the past decade, Appello has established itself as a leader in
+                        the IT industry. Along the way, we have formed a number of valued relationships with both
+                        clients and business partners.</p>
+                    <div class="clients__box">
+                        <div class="clients__item"><img src="img/Partners-logos/IMAGE.svg" alt="Partner`s logotype">
+                        </div>
+                        <div class="clients__item"><img src="img/Partners-logos/IMAGE-1.svg" alt="Partner`s logotype">
+                        </div>
+                        <div class="clients__item"><img src="img/Partners-logos/IMAGE-2.svg" alt="Partner`s logotype">
+                        </div>
+                        <div class="clients__item"><img src="img/Partners-logos/IMAGE-3.svg" alt="Partner`s logotype">
+                        </div>
+                        <div class="clients__item"><img src="img/Partners-logos/IMAGE-4.svg" alt="Partner`s logotype">
+                        </div>
+                        <div class="clients__item"><img src="img/Partners-logos/IMAGE-5.svg" alt="Partner`s logotype">
+                        </div>
+                        <div class="clients__item"><img src="img/Partners-logos/IMAGE-6.svg" alt="Partner`s logotype">
+                        </div>
+                        <div class="clients__item"><img src="img/Partners-logos/IMAGE-7.svg" alt="Partner`s logotype">
+                        </div>
+                    </div>
+
+                </div>
+
+            </section>
+            <section class="region">
+                <div class="region__container">
+                    <h4 class="region__title _title">Regional partnerships</h4>
+                    <div class="region__box region-box">
+                        <div class="region-box__card">
+                            <div class="region-box__description">
+                                <p class="region-box__text _text">App Development</p>
+                                <p class="region-box__title _inTitle">Sydney</p>
+                                <div class="region-box__arrow"><img src="img/arrow-2.svg" alt="Arrow"></div>
+
+                            </div>
+                            <div class="region-box__img"><svg width="78" height="97px" id="city-col" viewBox="0 0 78 54"
+                                    fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path id="city-col"
+                                        d="M76.6999 46.2857H75.3999V42.5203L77.9869 24.6103C78.0133 24.428 77.9997 24.2422 77.9471 24.0655C77.8945 23.8888 77.8041 23.7253 77.6821 23.5861C77.56 23.447 77.4092 23.3354 77.2397 23.2589C77.0703 23.1824 76.8862 23.1429 76.6999 23.1429H74.0999C70.0016 23.1299 66.04 24.5996 62.9614 27.2752L66.279 9.22999C66.3131 9.04471 66.3055 8.85429 66.257 8.67219C66.2085 8.4901 66.12 8.32077 65.998 8.17619C65.876 8.0316 65.7234 7.91529 65.5509 7.83548C65.3785 7.75567 65.1904 7.7143 65 7.7143H62.4C58.2374 7.70603 54.1583 8.86942 50.6394 11.0686C48.1083 7.63572 44.7923 4.84351 40.962 2.91988C37.1318 0.996257 32.8958 -0.00425959 28.6 1.36308e-05H26C25.8138 5.54686e-06 25.6297 0.0395798 25.4603 0.116057C25.2908 0.192534 25.14 0.304127 25.0179 0.443281C24.8959 0.582435 24.8055 0.745901 24.7529 0.922609C24.7003 1.09932 24.6867 1.28514 24.713 1.46749L26.1034 11.0943C22.5708 8.88743 18.4783 7.71552 14.3 7.7143H11.7001C11.5096 7.7143 11.3216 7.75567 11.1491 7.83548C10.9766 7.91529 10.824 8.0316 10.702 8.17619C10.58 8.32077 10.4916 8.4901 10.443 8.67219C10.3945 8.85429 10.387 9.04471 10.421 9.22999L12.2137 18.9823C10.3802 18.3332 8.44748 18.0009 6.50006 18H1.30007C1.09882 18 0.90031 18.0462 0.720183 18.135C0.540056 18.2237 0.383229 18.3527 0.262055 18.5116C0.14088 18.6705 0.0586664 18.8551 0.0218898 19.0508C-0.0148867 19.2465 -0.00522196 19.4479 0.0501226 19.6393L4.77659 36H3.90007C3.55528 36 3.22463 36.1355 2.98083 36.3766C2.73703 36.6177 2.60007 36.9447 2.60007 37.2857V46.2857H1.30007C0.955289 46.2857 0.62463 46.4212 0.380833 46.6623C0.137036 46.9034 7.26022e-05 47.2304 7.26022e-05 47.5714V52.7143C7.26022e-05 53.0553 0.137036 53.3823 0.380833 53.6234C0.62463 53.8645 0.955289 54 1.30007 54H76.6999C77.0447 54 77.3754 53.8645 77.6192 53.6234C77.863 53.3823 77.9999 53.0553 77.9999 52.7143V47.5714C77.9999 47.2304 77.863 46.9034 77.6192 46.6623C77.3754 46.4212 77.0447 46.2857 76.6999 46.2857ZM54.6 46.2857V42.4286C54.6 42.0876 54.463 41.7606 54.2192 41.5194C53.9754 41.2783 53.6448 41.1429 53.3 41.1429H48.1C47.7552 41.1429 47.4245 41.2783 47.1808 41.5194C46.937 41.7606 46.8 42.0876 46.8 42.4286V46.2857H41.6V42.4286C41.6 42.0876 41.463 41.7606 41.2192 41.5194C40.9754 41.2783 40.6448 41.1429 40.3 41.1429H35.1C34.7552 41.1429 34.4246 41.2783 34.1808 41.5194C33.937 41.7606 33.8 42.0876 33.8 42.4286V46.2857H20.0386L10.0193 36.3766C9.8986 36.2572 9.75528 36.1625 9.59755 36.0979C9.43983 36.0332 9.27078 36 9.10006 36H7.80006V33.4286H14.3C14.5567 33.4286 14.8076 33.3535 15.0211 33.2126L18.5936 30.8571H26.8192L35.554 38.2619C35.7896 38.4616 36.0897 38.5714 36.4 38.5714H67.1438L72.7999 43.0465V46.2857H54.6ZM52 46.2857H49.4V43.7143H52V46.2857ZM39 46.2857H36.4V43.7143H39V46.2857ZM53.3 36H48.1V28.0938L53.3 34.5224V36ZM45.5 36H39.1048L45.5 28.0938V36ZM74.0999 25.7143H75.201L73.1349 40.0179L68.4125 36.2817C68.1818 36.0993 67.8953 35.9999 67.6 36H60.3411C61.1894 33.0378 62.9922 30.4304 65.4755 28.5739C67.9588 26.7175 70.987 25.7134 74.0999 25.7143ZM63.4422 10.2857L59.5774 31.3071C58.7245 32.7158 58.0895 34.2426 57.6933 35.837L55.9 33.6205V27C55.9058 22.1473 54.5834 17.3835 52.0731 13.2139C55.167 11.2935 58.7472 10.2783 62.4 10.2857H63.4422ZM28.6 2.57144C31.8439 2.57058 35.0562 3.20185 38.0533 4.42919C41.0505 5.65654 43.7737 7.4559 46.0675 9.72447C48.3613 11.993 50.1806 14.6864 51.4216 17.6506C52.6626 20.6148 53.3009 23.7918 53.3 27V30.4062L47.8151 23.625C47.6933 23.4744 47.5389 23.3529 47.3631 23.2694C47.1874 23.1858 46.995 23.1425 46.8 23.1425C46.605 23.1425 46.4126 23.1858 46.2368 23.2694C46.0611 23.3529 45.9066 23.4744 45.7849 23.625L36.225 35.4436L31.6913 31.6005L27.4989 2.57144H28.6ZM14.3 10.2857C18.7854 10.2864 23.1335 11.8158 26.612 14.6163L28.6985 29.0636L28.146 28.5953C27.9104 28.3955 27.6103 28.2857 27.3 28.2857H18.2C17.9434 28.2857 17.6924 28.3609 17.4789 28.5017L16.7007 29.0149L13.2578 10.2857H14.3ZM6.50006 20.5714C8.67195 20.5721 10.8153 21.0606 12.7685 22L14.3436 30.569L13.9065 30.8571H6.50006C6.33609 30.8573 6.17363 30.8882 6.02134 30.9483L3.02257 20.5714H6.50006ZM5.20006 38.5714H8.56153L16.3615 46.2857H5.20006V38.5714ZM75.3999 51.4286H2.60007V48.8571H75.3999V51.4286Z"
+                                        fill="#0A8BFE"></path>
+                                </svg>
+                            </div>
+                        </div>
+                        <div class="region-box__card">
+                            <div class="region-box__description">
+                                <p class="region-box__text _text">App Development</p>
+                                <p class="region-box__title _inTitle">Brisbane</p>
+                                <div class="region-box__arrow"><img src="img/arrow-2.svg" alt="Arrow"></div>
+                            </div>
+                            <div class="region-box__img"><svg width="81" height="82" viewBox="0 0 81 82" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path id="city-col"
+                                        d="M77.5566 49.9661V42.0767H54.2896V17.0937H47.8266V11.8341H44.8807L42.2955 3.94469H41.3635V0H38.7783V3.94469H37.8463L35.2611 11.8341H32.3153V17.0937H25.8522V42.0767H2.58522V49.9661H0V81.5236H80.1418V49.9661H77.5566ZM46.534 68.3746H33.6079V59.1704C33.6079 55.5452 36.5072 52.5959 40.0709 52.5959C43.6346 52.5959 46.534 55.5452 46.534 59.1704V68.3746ZM40.0709 49.9661C35.0814 49.9661 31.0226 54.0962 31.0226 59.1704V68.3746H23.267V51.9581L40.0709 39.748L56.8749 51.9581V68.3746H49.1192V59.1704C49.1192 54.0962 45.0604 49.9661 40.0709 49.9661ZM33.6079 31.5575C33.6079 27.9324 36.5072 24.983 40.0709 24.983C43.6346 24.983 46.534 27.9324 46.534 31.5575C46.534 34.4779 44.6054 37.0262 41.8948 37.8414L40.0709 36.516L38.247 37.8414C35.5351 37.0262 33.6079 34.4805 33.6079 31.5575ZM59.4601 52.5959H77.5566V68.3746H59.4601V52.5959ZM74.9714 44.7065V49.9661H58.5811L54.2896 46.8471V44.7065H74.9714ZM39.7103 6.57448H40.4328L42.1559 11.8341H37.9872L39.7103 6.57448ZM34.9005 14.4639H45.2414V17.0937H34.9005V14.4639ZM32.3153 19.7234H47.8266H51.7044V44.9695L44.3559 39.631C47.2113 38.0518 49.1192 34.9894 49.1192 31.5575C49.1192 26.482 45.0604 22.3532 40.0709 22.3532C35.0814 22.3532 31.0226 26.482 31.0226 31.5575C31.0226 34.992 32.9292 38.0531 35.7846 39.6297L28.4374 44.9695V19.7234H32.3153ZM5.17044 44.7065H25.8522V46.8471L21.5607 49.9661H5.17044V44.7065ZM20.6818 52.5959V68.3746H2.58522V52.5959H20.6818ZM10.3409 78.8938H7.75566V76.264H10.3409V78.8938ZM20.6818 78.8938H18.0965V76.264H20.6818V78.8938ZM31.0226 78.8938H28.4374V76.264H31.0226V78.8938ZM41.3635 78.8938H38.7783V76.264H41.3635V78.8938ZM51.7044 78.8938H49.1192V76.264H51.7044V78.8938ZM62.0453 78.8938H59.4601V76.264H62.0453V78.8938ZM72.3862 78.8938H69.801V76.264H72.3862V78.8938ZM74.9714 78.8938V73.6342H67.2157V78.8938H64.6305V73.6342H56.8749V78.8938H54.2896V73.6342H46.534V78.8938H43.9487V73.6342H36.1931V78.8938H33.6079V73.6342H25.8522V78.8938H23.267V73.6342H15.5113V78.8938H12.9261V73.6342H5.17044V78.8938H2.58522V71.0044H77.5566V78.8938H74.9714Z"
+                                        fill="#0A8BFE"></path>
+                                </svg>
+                            </div>
+                        </div>
+                        <div class="region-box__card">
+                            <div class="region-box__description">
+                                <p class="region-box__text _text">App Development</p>
+                                <p class="region-box__title _inTitle">Goldcoast</p>
+                                <div class="region-box__arrow"><img src="img/arrow-2.svg" alt="Arrow"></div>
+                            </div>
+                            <div class="region-box__img"><svg width="63" height="97" viewBox="0 0 63 97" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path id="city-col" fill-rule="evenodd" clip-rule="evenodd"
+                                        d="M13.6239 2C13.6239 1.36487 13.1091 0.849998 12.4739 0.849998C11.8388 0.849998 11.3239 1.36487 11.3239 2V3.82402H9.38818C8.75305 3.82402 8.23818 4.3389 8.23818 4.97402C8.23818 5.60915 8.75305 6.12402 9.38818 6.12402H11.3239V8.08361L3.85018 28.6917L3.99557 28.7444L3.98543 28.7591L2.61405 30.7431L2.41348 31.0333L2.41011 31.386L2.07162 66.8087L0.32934 68.6291L0.0101566 68.9626V69.4242V94.9245V96.0745H1.16016H61.8435H62.9935V94.9245V69.4242V68.9357L62.6418 68.5965L61.2792 67.2823V33.0504V32.793L61.1695 32.5601L59.4553 28.9227L58.6569 27.2286L58.5712 27.3387L51.3372 6.43749V6.12402H53.2727C53.9078 6.12402 54.4227 5.60915 54.4227 4.97402C54.4227 4.3389 53.9078 3.82402 53.2727 3.82402H51.3372V2C51.3372 1.36487 50.8224 0.849998 50.1872 0.849998C49.5521 0.849998 49.0372 1.36487 49.0372 2V3.82402H47.1015C46.4663 3.82402 45.9515 4.3389 45.9515 4.97402C45.9515 5.60915 46.4663 6.12402 47.1015 6.12402H49.0372V6.46002L42.4713 28.5917L42.3258 28.8524L39.9259 33.1511L39.78 33.4125V33.7117V56.07L32.1371 47.1732V44.7802H34.0725C34.7076 44.7802 35.2225 44.2654 35.2225 43.6302C35.2225 42.9951 34.7076 42.4802 34.0725 42.4802H32.1371V40.6562C32.1371 40.0211 31.6222 39.5062 30.9871 39.5062C30.3519 39.5062 29.8371 40.0211 29.8371 40.6562V42.4802H27.9013C27.2662 42.4802 26.7513 42.9951 26.7513 43.6302C26.7513 44.2654 27.2662 44.7802 27.9013 44.7802H29.8371V47.1857L22.8808 55.5723V51.3685H22.5379V32.0584V31.778L22.4089 31.5291L21.3041 29.3979L21.4387 29.3485L13.6239 8.08163V6.12402H15.5594C16.1945 6.12402 16.7094 5.60915 16.7094 4.97402C16.7094 4.3389 16.1945 3.82402 15.5594 3.82402H13.6239V2ZM50.2708 10.3885L56.887 29.5046L55.4501 31.3524L55.208 31.6639V32.0584V34.8764H46.1941V33.0504V32.793L46.0844 32.5601L44.6169 29.4463L50.2708 10.3885ZM18.854 28.9829L12.4809 11.6395L6.15818 29.0738L7.51584 30.6452L7.79565 30.969V31.397V34.8764H16.4666V32.0584V31.6145L16.7649 31.2857L18.854 28.9829ZM20.5808 62.3053H20.2843L20.2379 62.3612V62.3053H4.41476L4.36717 67.2859L4.36281 67.7411L4.04803 68.07L2.31016 69.8859V80.5092H20.5808V62.3053ZM2.31016 93.7745V82.8092H20.5808V93.7745H18.0813V91.8257C18.0813 88.5397 15.4175 85.8759 12.1315 85.8759C8.84549 85.8759 6.18167 88.5397 6.18167 91.8257V93.7745H2.31016ZM15.7813 93.7745V91.8257C15.7813 89.81 14.1472 88.1759 12.1315 88.1759C10.1157 88.1759 8.48167 89.81 8.48167 91.8257V93.7745H15.7813ZM22.8808 93.7745V82.8092H39.7803V93.7745H37.2803V93.61C37.2803 90.552 35.7304 87.7025 33.1634 86.0407C32.161 85.3918 30.8755 85.3777 29.8588 85.9889C27.1262 87.6315 25.4194 90.5845 25.3813 93.7745H22.8808ZM27.6815 93.7745H34.9803V93.61C34.9803 91.3321 33.8258 89.2094 31.9135 87.9715C31.655 87.8041 31.3145 87.7974 31.0438 87.9602C28.9971 89.1904 27.7195 91.3984 27.6815 93.7745ZM42.0803 93.7745V82.8092H60.6935V93.7745H56.4793V91.8257C56.4793 88.5397 53.8155 85.8759 50.5295 85.8759C47.2435 85.8759 44.5797 88.5397 44.5797 91.8257V93.7745H42.0803ZM54.1793 91.8257V93.7745H46.8797V91.8257C46.8797 89.81 48.5138 88.1759 50.5295 88.1759C52.5452 88.1759 54.1793 89.81 54.1793 91.8257ZM42.0803 80.5092H60.6935V69.9128L59.3309 68.5986L58.9792 68.2595V67.7709V62.3053H42.0803V80.5092ZM22.8808 80.5092H39.7803V62.3053H22.8808V80.5092ZM20.2379 59.1734V60.0053H4.43674L4.70664 31.7607L5.03263 31.2891L5.49565 31.825V36.0264V37.1764H6.64565H17.6166H18.7666V36.0264V32.5023L19.7569 31.4108L20.2379 32.3387V59.1734ZM39.7803 60.0053H22.8808V59.1749L31.003 49.3827L39.7803 59.5999V60.0053ZM58.9792 60.0053H42.0803V51.3685H42.08V34.011L43.2434 31.9271L43.8941 33.3078V36.0264V37.1764H45.0441H56.358H57.508V36.0264V32.4529L58.1732 31.5974L58.9792 33.3078V60.0053ZM9.85286 43.2966C9.85286 42.6615 9.33799 42.1466 8.70286 42.1466C8.06774 42.1466 7.55286 42.6615 7.55286 43.2966V55.8622C7.55286 56.4973 8.06774 57.0122 8.70286 57.0122C9.33799 57.0122 9.85286 56.4973 9.85286 55.8622V43.2966ZM16.0239 43.2966C16.0239 42.6615 15.5091 42.1466 14.8739 42.1466C14.2388 42.1466 13.7239 42.6615 13.7239 43.2966V55.8622C13.7239 56.4973 14.2388 57.0122 14.8739 57.0122C15.5091 57.0122 16.0239 56.4973 16.0239 55.8622V43.2966ZM47.1013 42.1466C47.7365 42.1466 48.2513 42.6615 48.2513 43.2966V55.8622C48.2513 56.4973 47.7365 57.0122 47.1013 57.0122C46.4662 57.0122 45.9513 56.4973 45.9513 55.8622V43.2966C45.9513 42.6615 46.4662 42.1466 47.1013 42.1466ZM54.4224 43.2966C54.4224 42.6615 53.9075 42.1466 53.2724 42.1466C52.6373 42.1466 52.1224 42.6615 52.1224 43.2966V55.8622C52.1224 56.4973 52.6373 57.0122 53.2724 57.0122C53.9075 57.0122 54.4224 56.4973 54.4224 55.8622V43.2966ZM51.609 64.2382L50.8246 63.5839L50.0823 64.2856L48.2594 66.009C45.9106 68.2295 44.5797 71.3192 44.5797 74.5514V76.3641V77.5141H45.7297H56.015H57.165V76.3641V74.3753C57.165 70.8885 55.6171 67.5816 52.9396 65.3481L51.609 64.2382ZM49.8394 67.6804L50.9201 66.6587L51.4663 67.1143C53.6199 68.9108 54.865 71.5707 54.865 74.3753V75.2141H46.8797V74.5514C46.8797 71.9516 47.9502 69.4664 49.8394 67.6804ZM11.7407 63.5839L12.5251 64.2382L13.8557 65.3481C16.5333 67.5816 18.0811 70.8885 18.0811 74.3753V76.3641V77.5141H16.9311H6.64584H5.49584V76.3641V74.5514C5.49584 71.3192 6.82672 68.2295 9.17552 66.009L10.9985 64.2856L11.7407 63.5839ZM11.8363 66.6587L10.7556 67.6804C8.86633 69.4664 7.79584 71.9516 7.79584 74.5514V75.2141H15.7811V74.3753C15.7811 71.5707 14.5361 68.9108 12.3824 67.1143L11.8363 66.6587ZM29.7018 65.7611C30.1125 65.6648 30.5429 65.6136 30.9872 65.6136C31.5384 65.6136 32.068 65.6924 32.5654 65.8384L31.579 67.3334C31.3866 67.298 31.1889 67.2796 30.9877 67.2796C30.8948 67.2796 30.8026 67.2835 30.7113 67.2912L29.7018 65.7611ZM34.085 69.5942H36.2147C35.9659 68.5611 35.3899 67.6399 34.5911 66.9445L33.5484 68.5249C33.7918 68.8386 33.9766 69.1996 34.085 69.5942ZM36.2157 71.8942H33.8167C33.7071 72.0935 33.5762 72.2794 33.4272 72.4491L34.7297 74.4233C35.4576 73.7431 35.9821 72.8683 36.2157 71.8942ZM30.9877 73.5477C31.1204 73.5477 31.2517 73.5396 31.3809 73.524L32.7487 75.5971C32.1989 75.7796 31.6067 75.8792 30.9872 75.8792C30.474 75.8792 29.9795 75.8109 29.5123 75.6836L30.9221 73.547C30.9439 73.5474 30.9658 73.5477 30.9877 73.5477ZM28.7516 72.6603L27.4618 74.6152C26.6211 73.9116 26.0149 72.9626 25.7587 71.8942H28.1586C28.3156 72.1798 28.5165 72.4378 28.7516 72.6603ZM27.8903 69.5942H25.7598C26.0311 68.4674 26.6917 67.4737 27.606 66.761L28.6204 68.2986C28.2808 68.6599 28.0259 69.1009 27.8903 69.5942ZM30.9872 63.3136C26.794 63.3136 23.3232 66.6026 23.3232 70.7464C23.3232 74.8902 26.794 78.1792 30.9872 78.1792C35.1804 78.1792 38.6513 74.8902 38.6513 70.7464C38.6513 66.6026 35.1804 63.3136 30.9872 63.3136ZM30.9877 69.5796C30.4472 69.5796 30.0806 69.9918 30.0806 70.4136C30.0806 70.8354 30.4472 71.2477 30.9877 71.2477C31.5282 71.2477 31.8947 70.8354 31.8947 70.4136C31.8947 69.9918 31.5282 69.5796 30.9877 69.5796Z"
+                                        fill="#0A8BFE"></path>
+                                </svg>
+                            </div>
+                        </div>
+                        <div class="region-box__card">
+                            <div class="region-box__description">
+                                <p class="region-box__text _text">App Development</p>
+                                <p class="region-box__title _inTitle">Adelaide</p>
+                                <div class="region-box__arrow"><img src="img/arrow-2.svg" alt="Arrow"></div>
+                            </div>
+                            <div class="region-box__img"><svg width="77" height="79" viewBox="0 0 77 79" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path id="city-col" fill-rule="evenodd" clip-rule="evenodd"
+                                        d="M73.2085 69.7423H74.7321C75.6104 69.7423 76.3222 70.4331 76.3222 71.2853V77.4572C76.3222 78.3088 75.6104 79.0002 74.7321 79.0002H1.59006C0.7118 79.0002 0 78.3088 0 77.4572V71.2853C0 70.4331 0.7118 69.7423 1.59006 69.7423H3.11366V42.4335H1.59006C0.7118 42.4335 0 41.7428 0 40.8906C0 40.0383 0.7118 39.3476 1.59006 39.3476H3.11366V34.8712C3.11366 34.0756 3.73415 33.421 4.53105 33.3372C4.30558 31.2187 5.18694 29.0663 7.02855 27.5414L11.8068 23.5834C12.4012 23.0903 13.277 23.0909 13.8714 23.5828L18.6503 27.5408C18.9155 27.7608 19.1596 27.9947 19.385 28.2388V26.2589C19.385 25.4066 20.0968 24.7159 20.9751 24.7159H22.2602C22.8732 18.726 27.013 13.7276 32.6304 11.7103V6.32498C32.6304 5.47273 33.3422 4.78201 34.2204 4.78201H36.5713V1.54297C36.5713 0.690721 37.2831 0 38.1614 0C39.039 0 39.7515 0.690721 39.7515 1.54297V4.78201H42.1018C42.9794 4.78201 43.6918 5.47273 43.6918 6.32498V11.7103C49.3092 13.7276 53.4489 18.726 54.062 24.7159H55.3471C56.2253 24.7159 56.9371 25.4066 56.9371 26.2589V28.2388C57.1626 27.9947 57.4067 27.7608 57.6725 27.5414L62.4508 23.5834C63.0452 23.0909 63.9204 23.0909 64.5154 23.5834L69.2936 27.5414C71.1352 29.0663 72.0166 31.2187 71.7911 33.3372C72.588 33.421 73.2085 34.0756 73.2085 34.8712V39.3476H74.7321C75.6104 39.3476 76.3222 40.0389 76.3222 40.8906C76.3222 41.7428 75.6104 42.4335 74.7321 42.4335H73.2085V69.7423ZM65.0731 69.7423H70.0284V42.4335H56.9371V44.3056C57.6874 44.4292 58.2595 45.0614 58.2595 45.8251C58.2595 46.5881 57.6874 47.2204 56.9371 47.3439V69.7423H61.893V52.0874C61.893 51.2351 62.6048 50.5444 63.4831 50.5444C64.3607 50.5444 65.0731 51.2351 65.0731 52.0874V69.7423ZM48.4713 62.092V69.7423H53.7576V47.368H22.5645V69.7423H27.8509V62.092H27.4732C26.5956 62.092 25.8832 61.4012 25.8832 60.549C25.8832 59.6973 26.5956 59.006 27.4732 59.006H27.9739C28.7403 54.2192 33.0167 50.5444 38.1608 50.5444C43.3055 50.5444 47.5819 54.2192 48.3483 59.006H48.849C49.7266 59.006 50.439 59.6973 50.439 60.549C50.439 61.4012 49.7266 62.092 48.849 62.092H48.4713ZM31.2117 59.006H45.1105C44.3856 55.9315 41.5465 53.6303 38.1614 53.6303C34.7763 53.6303 31.9366 55.9315 31.2117 59.006ZM53.757 34.7235V27.8018H39.7409L53.757 34.7235ZM33.0496 38.7828H22.5645V44.2821H53.757V38.7828H43.2726C42.5937 40.8954 40.5589 42.4335 38.1608 42.4335C35.7627 42.4335 33.7279 40.8954 33.0496 38.7828ZM35.9881 37.2393C35.9881 38.4019 36.9627 39.3476 38.1608 39.3476C39.3589 39.3476 40.3334 38.4019 40.3334 37.2393C40.3334 36.0772 39.3589 35.1315 38.1608 35.1315C36.9627 35.1315 35.9881 36.0772 35.9881 37.2393ZM43.2726 35.6969H48.7167L38.1608 30.4839L27.6049 35.6969H33.0496C33.7279 33.5837 35.7627 32.0456 38.1608 32.0456C40.5589 32.0456 42.5937 33.5837 43.2726 35.6969ZM56.9371 38.7587V39.3476H70.0284V36.4141H69.7023H69.698H69.6924H58.0111C58.1676 36.6528 58.2595 36.9355 58.2595 37.2399C58.2595 38.0029 57.6874 38.6352 56.9371 38.7587ZM63.4831 26.7856L59.7365 29.8885C58.6135 30.8185 58.1309 32.0998 58.3856 33.3282H68.5806C68.8353 32.0998 68.3526 30.8185 67.229 29.8885L63.4831 26.7856ZM40.5117 7.86795H35.8105V10.9207C36.5776 10.8104 37.362 10.7526 38.1608 10.7526C38.9595 10.7526 39.744 10.8104 40.5117 10.9207V7.86795ZM50.8583 24.7159C50.0726 18.5934 44.68 13.8385 38.1608 13.8385C31.6415 13.8385 26.249 18.594 25.4633 24.7171C25.9555 24.7239 26.3935 24.9474 26.6805 25.2936H36.207C36.4984 24.9415 36.9458 24.7159 37.4475 24.7159H50.8583ZM36.2234 27.2415C36.3033 27.3349 36.3945 27.419 36.4947 27.492L22.5645 34.7235V27.8018H25.4403C25.9338 27.8018 26.3748 27.5837 26.6664 27.2415H36.2234ZM12.8391 26.7856L9.09253 29.8885C7.96955 30.8185 7.48694 32.0998 7.7416 33.3282H17.936C18.1913 32.0998 17.708 30.8185 16.5851 29.8885L12.8391 26.7856ZM18.3111 36.4141H6.29315V39.3476H19.3844V38.7587C18.6341 38.6352 18.0627 38.0029 18.0627 37.2399C18.0627 36.9355 18.1546 36.6528 18.3111 36.4141ZM19.3844 42.4335H6.29315V69.7423H11.249V52.0874C11.249 51.2351 11.9608 50.5444 12.8391 50.5444C13.7167 50.5444 14.4292 51.2351 14.4292 52.0874V69.7423H19.3844V47.3439C18.6341 47.2204 18.0627 46.5881 18.0627 45.8251C18.0627 45.0614 18.6341 44.4292 19.3844 44.3056V42.4335ZM3.1795 75.9142H73.1421V72.8283H55.3502H55.3471H55.344H44.5204C43.6428 72.8283 42.9303 72.1369 42.9303 71.2853C42.9303 70.4331 43.6428 69.7423 44.5204 69.7423H45.2912V62.092H31.0304V69.7423H31.7999C32.6782 69.7423 33.39 70.4331 33.39 71.2853C33.39 72.1369 32.6782 72.8283 31.7999 72.8283H20.9776H20.9745H20.9714H3.1795V75.9142Z"
+                                        fill="#0A8BFE"></path>
+                                </svg>
+                            </div>
+                        </div>
+                        <div class="region-box__card">
+                            <div class="region-box__description">
+                                <p class="region-box__text _text">App Development</p>
+                                <p class="region-box__title _inTitle">Melbourne</p>
+                                <div class="region-box__arrow"><img src="img/arrow-2.svg" alt="Arrow"></div>
+                            </div>
+                            <div class="region-box__img"><svg width="83" height="90" viewBox="0 0 83 90" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path id="city-col" fill-rule="evenodd" clip-rule="evenodd"
+                                        d="M70.5449 0.887241L68.3605 0.908624L67.035 16.7666L66.8546 16.2765L66.3625 14.9396L65.1957 15.7569L65.1956 15.7569L65.1954 15.7571L65.1945 15.7577L65.1907 15.7603L65.1758 15.7708L65.1174 15.8117L64.8979 15.965C64.71 16.0961 64.4447 16.2809 64.1353 16.4956C63.516 16.9254 62.7225 17.4731 62.0204 17.9487C61.1986 18.5055 60.2667 19.2734 59.5585 19.8834C59.2003 20.192 58.8913 20.4672 58.6716 20.6655C58.5617 20.7647 58.4738 20.8449 58.4131 20.9006L58.3429 20.9653L58.3242 20.9826L58.3191 20.9873L58.3177 20.9887L58.3172 20.9891L58.3171 20.9892C58.317 20.9893 58.317 20.9893 59.0644 21.7923L58.317 20.9893L57.9674 21.3147V21.7923V25.6703H57.8232V27.8644H57.9674V29.4117L57.3129 30.0692L56.9934 30.3902V30.8431V40.1957L56.624 40.3813L56.0194 40.685V41.3616V83.5632H53.5229V25.9464V25.8129L53.4908 25.6833L52.4258 25.9464C53.4908 25.6833 53.4908 25.6831 53.4907 25.6829L53.4906 25.6824L53.4903 25.6811L53.4893 25.6771L53.4858 25.6633L53.4732 25.6137C53.4623 25.5711 53.4463 25.5097 53.4253 25.4313C53.3833 25.2745 53.3212 25.0495 53.2394 24.7709C53.0761 24.2142 52.8334 23.44 52.5145 22.5659C51.8849 20.8403 50.9263 18.635 49.6444 16.9615C48.4986 15.4656 46.5883 13.7471 45.026 12.4414C44.2333 11.7789 43.5091 11.2054 42.983 10.7974C42.7197 10.5932 42.5056 10.4301 42.3566 10.3176C42.2821 10.2614 42.2239 10.2177 42.1839 10.1879L42.138 10.1537L42.1258 10.1446L42.1224 10.1421L42.1215 10.1414L42.1212 10.1412C42.121 10.1411 42.121 10.141 41.4689 11.0233L42.121 10.141L41.4345 9.63367L40.774 10.1744L37.7857 12.6208L37.3836 12.95V13.4697V24.8493H36.4885H30.1985H29.1014V25.9464V88.3299V89.4269H30.1985H56.4102H57.5072V89.4248H81.1416H82.2386V88.3278V41.3616V40.8146L81.8018 40.4854L81.2646 40.0807V30.5985V30.0515L80.8278 29.7223L80.2907 29.3176V21.5477V21.1165L79.997 20.8007L79.1936 21.5477C79.997 20.8007 79.997 20.8007 79.9969 20.8006L79.9968 20.8004L79.9964 20.8L79.9951 20.7986L79.9908 20.794L79.9753 20.7775L79.9181 20.7167C79.8687 20.6646 79.7975 20.5898 79.7082 20.4975C79.53 20.313 79.2786 20.0573 78.9852 19.7708C78.4081 19.2075 77.6316 18.4893 76.9167 17.9696C76.2187 17.4621 75.4104 16.9043 74.7808 16.476C74.4651 16.2612 74.1925 16.0778 73.9987 15.948C73.9018 15.8831 73.8245 15.8315 73.7713 15.7961L73.7101 15.7554L73.694 15.7447L73.6898 15.742L73.6887 15.7412L73.6884 15.741L73.6883 15.741L73.0823 16.6554L73.6883 15.7409L72.4421 14.9151L72.1126 16.0586L70.5449 0.887241ZM60.1615 27.8644V29.8647V29.9621H78.0966V29.8647V27.8644H60.1615ZM78.0966 25.6703V21.9871C77.9323 21.8176 77.7094 21.5916 77.4526 21.3409C76.8929 20.7946 76.2085 20.1673 75.6265 19.7443C75.0165 19.3007 74.3106 18.8114 73.7191 18.4076L72.6564 22.0961L70.511 21.9051L69.5691 12.7899L68.809 21.8837L66.6863 22.1713L65.2863 18.3675C64.68 18.7878 63.9256 19.3082 63.2511 19.7652C62.5382 20.2481 61.6844 20.948 60.9906 21.5457C60.6585 21.8318 60.3702 22.0882 60.1615 22.2764V25.6703H78.0966ZM59.1875 32.1561H79.0706V34.978H59.1875V32.1561ZM59.1875 37.172V39.6275H79.0706V37.172H59.1875ZM58.6448 41.8216H79.9291L80.0446 41.9086V44.6391H58.2135V42.0382L58.5828 41.8527L58.6448 41.8216ZM58.2135 46.8332V49.6508H80.0446V46.8332H58.2135ZM58.2135 51.8448H80.0446V54.6624H58.2135V51.8448ZM58.2135 56.8565V59.674H80.0446V56.8565H58.2135ZM58.2135 61.8681H80.0446V64.6792H58.2135V61.8681ZM58.2135 66.8733V69.6951H80.0446V66.8733H58.2135ZM58.2135 71.8892H80.0446V74.7068H58.2135V71.8892ZM58.2135 76.9008V87.2308H64.4994V80.4533V79.3563H65.5965H71.9561H73.0531V80.4533V87.2308H80.0446V76.9008H58.2135ZM66.6935 81.5504V87.2301H70.859V81.5504H66.6935ZM35.7942 83.6502H36.8913H46.3174H47.4145V84.7472V87.2328H55.3131V85.7573H52.4258H51.3288V84.6602V26.0852L51.3059 25.9991C51.268 25.8574 51.2105 25.649 51.1341 25.3884C50.981 24.8665 50.7528 24.1385 50.4534 23.3179C49.8463 21.6543 48.9788 19.7006 47.9026 18.2957C46.9184 17.0108 45.1765 15.4266 43.619 14.1249C42.8517 13.4836 42.1492 12.9272 41.6385 12.5312L41.4946 12.42L39.5777 13.9893V27.4142V28.5112H38.4807H36.4885H35.3915V27.4142V27.0434H31.2955V87.2328H35.7942V84.7472V83.6502ZM37.9883 85.8442V87.2303H45.2204V85.8442H37.9883ZM7.20857 21.3722H6.45593L6.18505 22.0744L7.20857 22.4692C6.18505 22.0744 6.18494 22.0747 6.18482 22.075L6.18448 22.0759L6.18349 22.0785L6.18029 22.0868L6.16909 22.1164C6.15951 22.1418 6.14576 22.1785 6.1281 22.2265C6.09278 22.3223 6.04182 22.463 5.97727 22.6471C5.84817 23.0154 5.6647 23.5578 5.44339 24.2642C5.0008 25.677 4.40667 27.7464 3.79321 30.3919C2.56645 35.6823 1.26137 43.2809 0.937925 52.5425C0.732118 58.4357 1.47027 65.9158 2.24991 71.8824C2.64085 74.8743 3.04442 77.5016 3.35031 79.3812C3.46061 80.059 3.55825 80.6398 3.63806 81.1057H2.03429H0.937256V82.2028V88.323V89.42H2.03429H25.3185H26.4156V88.323V85.1305H26.4158V84.0335V80.4533V79.3563H26.4156V77.2606H26.4158V76.1635V72.5834V71.4864H26.4156V69.3821H26.4158V68.2851V64.7049V63.6079H26.4156V61.51H26.4158V60.413V56.8329V55.7359H26.4156V53.638H26.4158V52.541V48.9608V47.8638H26.4156V45.7595H26.4158V44.6625V41.0823V39.9853H26.4156V37.8853H26.4158V36.7883V33.2081V32.1111H26.4156V24.1829V23.5937L25.9244 23.2683L23.3372 21.5547L23.0618 21.3722H22.7314H7.20857ZM24.2215 79.3563V77.2606H11.1863H10.0893V76.1635V72.5834V71.4864H11.1863H24.2215V69.3821H11.1863H10.0893V68.2851V64.7049V63.6079H11.1863H24.2215V61.51H11.1863H10.0893V60.413V56.8329V55.7359H11.1863H24.2215V53.638H11.1863H10.0893V52.541V48.9608V47.8638H11.1863H24.2215V45.7595H11.1863H10.0893V44.6625V41.0823V39.9853H11.1863H24.2215V37.8853H11.1863H10.0893V36.7883V33.2081V32.1111H11.1863H24.2215V24.7721L22.401 23.5663H7.98064C7.86509 23.9019 7.71414 24.3551 7.53712 24.9202C7.10973 26.2844 6.53052 28.3003 5.93056 30.8876C4.73048 36.0628 3.44842 43.52 3.13065 52.6191C2.93149 58.322 3.64861 65.6528 4.42547 71.5982C4.81279 74.5623 5.21278 77.1662 5.51589 79.0288C5.66741 79.9599 5.79465 80.7053 5.88388 81.2172C5.9285 81.4731 5.9636 81.6707 5.98749 81.8039L6.01468 81.9546L6.02156 81.9924L6.02325 82.0016L6.02365 82.0038L6.02374 82.0043L4.94482 82.2028L6.02375 82.0043L6.26203 83.2998H4.94482H3.13132V87.226H24.2215V85.1305H11.1863H10.0893V84.0335V80.4533V79.3563H11.1863H24.2215ZM24.2215 81.5504H12.2833V82.9364H24.2215V81.5504ZM24.2215 75.0665V73.6805H12.2833V75.0665H24.2215ZM24.2215 65.802H12.2833V67.188H24.2215V65.802ZM24.2215 59.316V57.9299H12.2833V59.316H24.2215ZM24.2215 51.4439V50.0579H12.2833V51.4439H24.2215ZM24.2215 42.1794H12.2833V43.5654H24.2215V42.1794ZM24.2215 35.6912V34.3052H12.2833V35.6912H24.2215ZM36.8913 40.701H35.7942V41.798V45.3781V46.4751H36.8913H46.3174H47.4145V45.3781V41.798V40.701H46.3174H36.8913ZM37.9883 44.2811V42.895H45.2204V44.2811H37.9883ZM35.7942 32.1111H36.8913H46.3174H47.4145V33.2081V36.7883V37.8853H46.3174H36.8913H35.7942V36.7883V33.2081V32.1111ZM37.9883 34.3052V35.6912H45.2204V34.3052H37.9883ZM36.8913 49.2929H35.7942V50.39V53.9701V55.0671H36.8913H46.3174H47.4145V53.9701V50.39V49.2929H46.3174H36.8913ZM37.9883 52.8731V51.487H45.2204V52.8731H37.9883ZM35.7942 57.8828H36.8913H46.3174H47.4145V58.9798V62.5599V63.657H46.3174H36.8913H35.7942V62.5599V58.9798V57.8828ZM37.9883 60.0768V61.4629H45.2204V60.0768H37.9883ZM35.7942 66.4705H36.8913H46.3174H47.4145V67.5675V71.1476V72.2447H46.3174H36.8913H35.7942V71.1476V67.5675V66.4705ZM37.9883 68.6645V70.0506H45.2204V68.6645H37.9883ZM36.8913 75.0603H35.7942V76.1573V79.7375V80.8345H36.8913H46.3174H47.4145V79.7375V76.1573V75.0603H46.3174H36.8913ZM37.9883 78.6404V77.2544H45.2204V78.6404H37.9883Z"
+                                        fill="#0A8BFE"></path>
+                                </svg>
+                            </div>
+                        </div>
+                        <div class="region-box__card">
+                            <div class="region-box__description">
+                                <p class="region-box__text _text">App Development</p>
+                                <p class="region-box__title _inTitle">Canberra</p>
+                                <div class="region-box__arrow"><img src="img/arrow-2.svg" alt="Arrow"></div>
+                            </div>
+                            <div class="region-box__img"><svg width="107" height="79" viewBox="0 0 107 79" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path id="city-col"
+                                        d="M104.985 46.0978H81.3613L60.5527 30.7713V19.7342V18.1568V2.03215C60.5527 0.90888 59.6515 0 58.5377 0C57.4238 0 56.5226 0.90888 56.5226 2.03215V6.09646H50.4774V2.03215C50.4774 0.90888 49.5762 0 48.4623 0C47.3485 0 46.4473 0.90888 46.4473 2.03215V17.7021C46.4473 17.7829 46.4835 17.8509 46.4926 17.9292C46.4835 18.0074 46.4473 18.076 46.4473 18.1563V30.7713L25.6387 46.0978H2.01507C0.901238 46.0978 0 47.0067 0 48.1299V76.5801C0 77.7034 0.901238 78.6122 2.01507 78.6122H26.2966H80.7034H104.985C106.099 78.6122 107 77.7034 107 76.5801V48.1299C107 47.0067 106.099 46.0978 104.985 46.0978ZM50.3711 46.0978H47.4583L50.4321 32.3056C50.4421 32.2598 50.4275 32.2167 50.4341 32.1714C50.4562 32.0505 50.4774 31.9286 50.4774 31.8036V20.1889H56.5226V31.8036C56.5226 31.9784 56.5488 32.1491 56.5916 32.3147C56.6007 32.3559 56.5896 32.396 56.6017 32.4366L60.516 46.0983H56.6294C55.5156 46.0983 54.6143 47.0072 54.6143 48.1305V54.2269H52.3867V48.1305C52.3862 47.0067 51.4849 46.0978 50.3711 46.0978ZM32.4723 46.0978L45.3828 36.5883L43.3325 46.0978H32.4723ZM64.7108 46.0978L62.0852 36.9328L74.5277 46.0978H64.7108ZM56.5226 10.1608V16.1241H50.4774V10.1608H56.5226ZM4.03013 50.1621H24.2815V74.5479H22.2665V64.3872C22.2665 63.2639 21.3652 62.355 20.2514 62.355C19.1376 62.355 18.2363 63.2639 18.2363 64.3872V74.5479H16.2213V64.3872C16.2213 63.2639 15.32 62.355 14.2062 62.355C13.0924 62.355 12.1911 63.2639 12.1911 64.3872V74.5479H10.1761V64.3872C10.1761 63.2639 9.27485 62.355 8.16102 62.355C7.04719 62.355 6.14595 63.2639 6.14595 64.3872V74.5479C-0.953188 74.5479 9.25543 74.5479 4.03013 74.5479V50.1621ZM28.3117 50.1621H48.356V56.2586C48.356 57.3818 49.2573 58.2907 50.3711 58.2907H56.6289C57.7427 58.2907 58.644 57.3818 58.644 56.2586V50.1621H78.6883V74.5479H76.6733V54.2264C76.6733 53.1031 75.772 52.1942 74.6582 52.1942C73.5444 52.1942 72.6431 53.1031 72.6431 54.2264V74.5479H70.6281V54.2264C70.6281 53.1031 69.7268 52.1942 68.613 52.1942C67.4992 52.1942 66.5979 53.1031 66.5979 54.2264V74.5479H64.5829V54.2264C64.5829 53.1031 63.6816 52.1942 62.5678 52.1942C61.454 52.1942 60.5527 53.1031 60.5527 54.2264V74.5479H58.5377V64.3872C58.5377 63.2639 57.6364 62.355 56.5226 62.355C55.4088 62.355 54.5075 63.2639 54.5075 64.3872V74.5479H52.4925V64.3872C52.4925 63.2639 51.5912 62.355 50.4774 62.355C49.3636 62.355 48.4623 63.2639 48.4623 64.3872V74.5479H46.4473V54.2264C46.4473 53.1031 45.546 52.1942 44.4322 52.1942C43.3184 52.1942 42.4171 53.1031 42.4171 54.2264V74.5479H40.4021V54.2264C40.4021 53.1031 39.5008 52.1942 38.387 52.1942C37.2732 52.1942 36.3719 53.1031 36.3719 54.2264V74.5479H34.3569V54.2264C34.3569 53.1031 33.4556 52.1942 32.3418 52.1942C31.228 52.1942 30.3267 53.1031 30.3267 54.2264V74.5479H28.3117V50.1621ZM102.97 74.5479C96.088 74.5479 106.003 74.5479 100.854 74.5479V64.3872C100.854 63.2639 99.9528 62.355 98.839 62.355C97.7252 62.355 96.8239 63.2639 96.8239 64.3872V74.5479H94.8089V64.3872C94.8089 63.2639 93.9076 62.355 92.7938 62.355C91.68 62.355 90.7787 63.2639 90.7787 64.3872V74.5479H88.7637V64.3872C88.7637 63.2639 87.8624 62.355 86.7486 62.355C85.6348 62.355 84.7335 63.2639 84.7335 64.3872V74.5479H82.7185V50.1621H102.97V74.5479Z"
+                                        fill="#0A8BFE"></path>
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="callback">
+                <form action="" class="callback__form">
+                    <h4 class="callback__title _inTitle">Request a callback from our <br> expert team</h4>
+                    <input type="text" class="callback__input" placeholder="Required sevice*">
+                    <textarea name="" class="callback__textarea" placeholder="Details*"></textarea>
+                    <a href="#" class="callback__button _button">Send request</a>
+                </form>
+            </section>
+            <section class="approved">
+                <div class="approved__container">
+                    <div class="approved__body">
+                        <h4 class="approved__title _title">We're industry approved</h4>
+                        <p class="approved__text _text">Appello is one of Australia’s most highly rated software
+                            companies by recognisable directories like Clutch, GoodFirms, AppFutura and many more.</p>
+                        <div class="approved__box">
+                            <div class="approved__item"><img src="img/nominations/IMAGE.png" alt="Nomination"></div>
+                            <div class="approved__item"><img src="img/nominations/IMAGE-1.png" alt="Nomination"></div>
+                            <div class="approved__item"><img src="img/nominations/IMAGE-2.png" alt="Nomination"></div>
+                            <div class="approved__item"><img src="img/nominations/IMAGE-3.png" alt="Nomination"></div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="resources">
+                <div class="resources__container">
+                    <div class="resources__body">
+                        <h4 class="resources__title _title">Resources</h4>
+                        <p class="resources__text _text">Sharing the latest and greatest from industry trends, insights,
+                            inspiration and successful Appello ventures.</p>
+                        <div class="resources__box resources-box">
+                            <div class="resources-box__item">
+                                <div class="resources-box__img"><img src="img/resourses/IMAGE.png" alt="Resourses">
+                                </div>
+                                <div class="resources-box__description">
+                                    <p class="resources-box__title _inTitle">Meet our Chief Design Officer, Pharaoh
+                                        Woghiren</p>
+                                    <p class="resources-box__text _text">Meet our Chief Design Officer, Pharaoh
+                                        Woghiren.</p>
+                                </div>
+                            </div>
+                            <div class="resources-box__item">
+                                <div class="resources-box__img"><img src="img/resourses/IMAGE-1.png" alt="Resourses">
+                                </div>
+                                <div class="resources-box__description">
+                                    <p class="resources-box__title _inTitle">Refreshing Mobile Applications: How to Know
+                                        When a Mobile App Redesign is Necessary?</p>
+                                    <p class="resources-box__text _text">When to consider a mobile app redesign and
+                                        signs to look out for to make sure your app captures user attention and loyalty.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="resources-box__item">
+                                <div class="resources-box__img"><img src="img/resourses/IMAGE-2.png" alt="Resourses">
+                                </div>
+                                <div class="resources-box__description">
+                                    <p class="resources-box__title _inTitle">Your Guide to Developing the Best People
+                                        Management Software Solution</p>
+                                    <p class="resources-box__text _text">Custom employee management software or people
+                                        management software solutions will be extremely beneficial to not only your HR
+                                        department but the entire company.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="faq">
+                <div class="faq__container">
+                    <div class="faq__body">
+                        <h4 class="faq__title _title">FAQ</h4>
+                        <p class="faq__text _text">Below is a list of frequently asked questions. If you can't find what
+                            you’re looking for then feel free to ask us directly via <a href="#">email</a></p>
+                        <ul class="faq__list">
+                            <li id="faq-1" onclick="showFaq('faq-1')" class="faq__item">1. What is your privacy and
+                                security
+                                policy?<a class="faq__plus"></a>
+                                <p class="faq__answer">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                    Accusantium, dolorum. Sed repudiandae eius illum, tempore minima reiciendis
+                                    accusamus blanditiis tenetur, quidem expedita nostrum provident ut, cum praesentium
+                                    pariatur facere dignissimos.</p>
+                            </li>
+                            <li id="faq-2" onclick="showFaq('faq-2')" class="faq__item">2. How long is the development
+                                timeline?<a class="faq__plus"></a>
+                                <p class="faq__answer">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                    Accusantium, dolorum. Sed repudiandae eius illum, tempore minima reiciendis
+                                    accusamus blanditiis tenetur, quidem expedita nostrum provident ut, cum praesentium
+                                    pariatur facere dignissimos.</p>
+                            </li>
+                            <li id="faq-3" onclick="showFaq('faq-3')" class="faq__item">3. What type of companies do you
+                                work
+                                with?<a class="faq__plus"></a>
+                                <p class="faq__answer">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                    Accusantium, dolorum. Sed repudiandae eius illum, tempore minima reiciendis
+                                    accusamus blanditiis tenetur, quidem expedita nostrum provident ut, cum praesentium
+                                    pariatur facere dignissimos.</p>
+                            </li>
+                            <li id="faq-4" onclick="showFaq('faq-4')" class="faq__item">4. How many team members for a
+                                project?<a class="faq__plus"></a>
+                                <p class="faq__answer">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                    Accusantium, dolorum. Sed repudiandae eius illum, tempore minima reiciendis
+                                    accusamus blanditiis tenetur, quidem expedita nostrum provident ut, cum praesentium
+                                    pariatur facere dignissimos.</p>
+                            </li>
+                            <li id="faq-5" onclick="showFaq('faq-5')" class="faq__item">5. What warranties are to ensure
+                                deliverables are met?<a class="faq__plus"></a>
+                                <p class="faq__answer">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                    Accusantium, dolorum. Sed repudiandae eius illum, tempore minima reiciendis
+                                    accusamus blanditiis tenetur, quidem expedita nostrum provident ut, cum praesentium
+                                    pariatur facere dignissimos.</p>
+                            </li>
+                            <li id="faq-6" onclick="showFaq('faq-6')" class="faq__item">6. Do you outsource work?<a
+                                    class="faq__plus"></a>
+                                <p class="faq__answer">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                    Accusantium, dolorum. Sed repudiandae eius illum, tempore minima reiciendis
+                                    accusamus blanditiis tenetur, quidem expedita nostrum provident ut, cum praesentium
+                                    pariatur facere dignissimos.</p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+            <section class="kickstart">
+                <div class="kickstart__container">
+                    <h4 class="kickstart__title _title">kickstart your tech career</h4>
+                    <p class="kickstart__text _text">We're always on the lookout for bright strategic minds, creative
+                        superstars and coding gurus. Select one of our current opportunities below to apply.</p>
+                    <div class="slidebar">
+                        <div class="swiper">
+                            <div class="swiper-wrapper">
+                                <!-- Slides -->
+                                <div class="swiper-slide">Product Designer</div>
+                                <div class="swiper-slide">Frontend Engineer</div>
+                                <div class="swiper-slide">Project Manager</div>
+                                <div class="swiper-slide">Finance Director</div>
+                                <div class="swiper-slide">Backend Engineer</div>
+                                <div class="swiper-slide">Product Engineer</div>
+                                <div class="swiper-slide">FullStack Engineer</div>
+                            </div>
+                        </div>
+                        <!-- If we need navigation buttons -->
+                        <div class="swiper-button_prev"><img src="img/arrow-left.svg" alt=""></div>
+                        <div class="swiper-button_next"><img src="img/arrow-right.svg" alt=""></div>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer class="footer">
+            <div class="footer-intro">
+                <div class="footer-intro__container">
+                    <div class="footer-intro__body">
+                        <p class="footer-intro__text _text">Trusted by businesses worldwide.</p>
+                        <div class="footer-intro__logo"><img src="img/logo.svg" alt=""></div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-sitemap">
+                <div class="footer-sitemap__container">
+                    <div class="footer-sitemap__body">
+                        <div class="footer-sitemap__column">
+                            <p class="footer-sitemap__title">Our services</p>
+                            <ul class="footer-sitemap__list">
+                                <li class="footer-sitemap__item"><a href="#footer" class="footer-sitemap__link">iOS App
+                                        Development</a></li>
+                                <li class="footer-sitemap__item"><a href="#footer" class="footer-sitemap__link">Android
+                                        App
+                                        Development</a></li>
+                                <li class="footer-sitemap__item"><a href="#footer" class="footer-sitemap__link">UX/UI
+                                        App
+                                        Design</a></li>
+                                <li class="footer-sitemap__item"><a href="#footer" class="footer-sitemap__link">Custom
+                                        Software Development</a></li>
+                                <li class="footer-sitemap__item"><a href="#footer"
+                                        class="footer-sitemap__link">Healthcare
+                                        Software Development</a></li>
+                                <li class="footer-sitemap__item"><a href="#footer"
+                                        class="footer-sitemap__link">Education
+                                        Software Development</a></li>
+                                <li class="footer-sitemap__item"><a href="#footer" class="footer-sitemap__link">FinTech
+                                        Software Development</a></li>
+                            </ul>
+                        </div>
+                        <div class="footer-sitemap__column">
+                            <p class="footer-sitemap__title">Our offices</p>
+                            <ul class="footer-sitemap__list">
+                                <li class="footer-sitemap__item"><a href="#footer" class="footer-sitemap__link">WeWork -
+                                        George St, Sydney, Australia</a></li>
+                                <li class="footer-sitemap__item"><a href="#footer" class="footer-sitemap__link">Sydney
+                                        Startup Hub - Sydney, Australia</a></li>
+                                <li class="footer-sitemap__item"><a href="#footer" class="footer-sitemap__link">WeWork -
+                                        Edward St, Brisbane, Australia</a></li>
+                                <li class="footer-sitemap__item"><a href="#footer" class="footer-sitemap__link">40 Bank
+                                        St,
+                                        Canary Wharf, London, UK</a></li>
+                                <li class="footer-sitemap__item"><a href="#footer" class="footer-sitemap__link">WeWork -
+                                        Paddington, West London, UK</a></li>
+                                <li class="footer-sitemap__item"><a href="#footer" class="footer-sitemap__link">WeWork -
+                                        Mission St, San Francisco, US</a></li>
+                            </ul>
+                        </div>
+                        <div class="footer-sitemap__column">
+                            <p class="footer-sitemap__title">Contact us</p>
+                            <ul class="footer-sitemap__list">
+                                <li class="footer-sitemap__item">Email: <a href="mailto:admin@hophni.ga"
+                                        class="footer-sitemap__link"> admin@hophni.ga</a></li>
+                                <li class="footer-sitemap__item">Sydney:<a href="tel:(+61) 027 202 5164"
+                                        class="footer-sitemap__link">(+61) 027 202 5164</a></li>
+                                <li class="footer-sitemap__item">London: <a href="tel:(+44) 203 608 3126"
+                                        class="footer-sitemap__link">(+44) 203 608 3126</a></li>
+                                <li class="footer-sitemap__item">San Francisco: <a href="tel:(+1) 628 280 6518"
+                                        class="footer-sitemap__link">(+1) 628 280 6518</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <nav class="footer-nav">
+                <div class="footer-nav__container">
+                    <div class="footer-nav__body">
+                        <p class="footer-nav__text _text">© Appello Pty. Ltd.2021</p>
+                        <ul class="footer-nav__list">
+                            <li class="footer-nav__item"><a href="#" class="footer-nav__link _text">Facebook</a></li>
+                            <li class="footer-nav__item"><a href="#" class="footer-nav__link _text">Instagram</a></li>
+                            <li class="footer-nav__item"><a href="#" class="footer-nav__link _text">Dribbble</a></li>
+                            <li class="footer-nav__item"><a href="#" class="footer-nav__link _text">Linkedin</a></li>
+                        </ul>
+
+                        <a href="#" class="footer-nav__sitemap _text">Sitemap</a>
+                    </div>
+                </div>
+            </nav>
+        </footer>
+
+    </div>
+
+    <script src="js/swiper-bundle.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+
+    <script src="js/main.js"></script>
+
+</body>
+
+</html>
