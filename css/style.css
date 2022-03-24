@@ -1,7 +1,46 @@
 @charset "UTF-8";
-/* Made up by HoPHNi (hophni.pythonanywhere.com) */
 @import url("fonts.css");
-/* ====================================================== */
+/***************************************
+========================================
+
+	Author Name   : Shokhjahon Khamraev
+	
+****************************************
+=======================================/
+
+
+/* ----------------------------------------------------------------
+
+ ==> Table Of Content
+
+    01. Reset
+    02. Default
+    03. Modifiers
+    04. Preloader
+    05. Header
+        01. Nav - "Header-nav"
+        02. Div -  "Header-intro"
+    06. Main
+        01. Section - "Project-desc"
+        02. Section - "your-stage"
+        03. Section - "our-works"
+        04. Section - "clients"
+        05. Section - "region"
+        06. Section - "callback"
+        07. Section - "approved"
+        08. Section - "resources"
+        09. Section - "FAQ"
+        10. Section - "kickstart"
+    07. Footer
+        01. Div - "Footer-intro"
+        02. Div - "Footer-sitemap"
+        03. Nav - "Footer-nav"
+ 
+
+---------------------------------------------------------------- */
+/* ==========================================================================
+01. Reset
+========================================================================== */
 /* Указываем box sizing */
 *,
 *::before,
@@ -95,6 +134,10 @@ select {
   }
 }
 
+/* ==== Reset end ==== */
+/* ==========================================================================
+02. Default
+========================================================================== */
 [class*="__container"] {
   max-width: 1190px;
   padding: 0 15px;
@@ -107,7 +150,10 @@ select {
   overflow: hidden;
 }
 
-/* ====== Modifiers ====== */
+/* ==== Default end ==== */
+/* ==========================================================================
+03. Modifiers
+========================================================================== */
 ._button {
   padding: 18px 40px;
   background: #0a8bfe;
@@ -161,20 +207,70 @@ select {
   }
 }
 
-/* ====== Modifiers end ====== */
-/* ====================================================== */
-/* ==== preloader ==== */
+/* ==== Arrow-up ==== */
+.back-to-top {
+  display: none;
+  position: fixed;
+  bottom: 18px;
+  right: 15px;
+  text-decoration: none;
+}
+
+.arrow-up {
+  display: block;
+  font-size: 18px;
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  color: #fff;
+  background: #fff;
+  border-radius: 20px;
+  border: 2px solid #0f0d34;
+  position: relative;
+}
+
+.arrow-up::after,
+.arrow-up::before {
+  position: absolute;
+  content: "";
+  height: 10px;
+  width: 2px;
+  top: 50%;
+  margin-top: -5px;
+  display: block;
+  background-color: #0f0d34;
+}
+
+.arrow-up::after {
+  left: 50%;
+  margin-left: -4px;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+
+.arrow-up::before {
+  right: 50%;
+  margin-right: -4px;
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+}
+
+/* ==== Arrow-up end */
+/* ==== Modifier end ==== */
+/* ==========================================================================
+04. Preloader
+========================================================================== */
 .preloader {
   position: fixed;
   width: 100%;
   height: 100%;
   z-index: 3;
-  background: url(../img/header__bg.png) top no-repeat;
+  background: url(../img/header__bg.png) top/cover no-repeat;
   visibility: visible;
   opacity: 1;
 }
 
-.loading {
+.preloader .loading {
   position: relative;
   left: 50%;
   top: 50%;
@@ -189,14 +285,14 @@ select {
   /* border-top-color: #198c36; */
 }
 
-.loading::before,
-.loading::after {
+.preloader .loading::before,
+.preloader .loading::after {
   content: "";
   position: absolute;
   border-radius: 50%;
 }
 
-.loading::before {
+.preloader .loading::before {
   top: 10px;
   left: 10px;
   bottom: 10px;
@@ -206,7 +302,7 @@ select {
           animation: spin 2s linear infinite;
 }
 
-.loading::after {
+.preloader .loading::after {
   top: 15px;
   left: 15px;
   bottom: 15px;
@@ -245,9 +341,10 @@ select {
   }
 }
 
-/* ==== preloader end ==== */
-/* ====================================================== */
-/* ==== header ==== */
+/* ==== Preloader end ==== */
+/* ==========================================================================
+05. Header
+========================================================================== */
 .header {
   padding: 55px 0 0;
   height: 800px;
@@ -262,15 +359,8 @@ select {
           flex-direction: column;
 }
 
-.fixed {
-  width: 100%;
-  top: 0;
-  position: fixed;
-  padding: 20px 0;
-  background-color: #0f0d34;
-  z-index: 6;
-}
-
+/* ============================================================================== */
+/* ===== header-nav ===== */
 .header-nav__body {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -368,7 +458,7 @@ select {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
-    gap: 50px;
+    gap: 40px;
     -webkit-transition: all 0.5s ease;
     transition: all 0.5s ease;
   }
@@ -380,8 +470,17 @@ select {
   .header-nav__item:first-child {
     margin-top: 50px;
   }
+  .header-nav__link {
+    font-size: 20px;
+  }
+  .header-nav__button {
+    font-size: 20px;
+  }
 }
 
+/* ===== header-nav end===== */
+/* ============================================================================== */
+/* ===== header-intro ===== */
 .header-intro {
   height: 100%;
   position: relative;
@@ -425,9 +524,21 @@ select {
   }
 }
 
-/* ==== header end ==== */
-/* ====================================================== */
-/* ==== main ==== */
+/* ===== header-intro end ===== */
+.fixed {
+  width: 100%;
+  top: 0;
+  position: fixed;
+  padding: 20px 0;
+  background-color: #0f0d34;
+  z-index: 6;
+}
+
+/* ==== Header end ==== */
+/* ==========================================================================
+06. Main
+========================================================================== */
+/* ===== project-desc ===== */
 .project-desc {
   margin-top: -70px;
 }
@@ -542,6 +653,9 @@ select {
   }
 }
 
+/* ===== project-desc end ===== */
+/* ============================================================================== */
+/* ===== your-stage ===== */
 .your-stage {
   padding: 150px 0;
 }
@@ -599,6 +713,16 @@ select {
   padding: 40px;
   width: calc((100% - 40px) / 2);
   border: 1px solid #e8e8e8;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+.stage-body__item:hover {
+  border: 1px solid #707070;
+  -webkit-transform: translate(10px, -10px);
+          transform: translate(10px, -10px);
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
 }
 
 .stage-body__title {
@@ -629,6 +753,9 @@ select {
   }
 }
 
+/* ===== your-stage end ===== */
+/* ============================================================================== */
+/* ===== our-works ===== */
 .our-works {
   padding-bottom: 75px;
 }
@@ -764,6 +891,9 @@ select {
   }
 }
 
+/* ===== our-works end ===== */
+/* ============================================================================== */
+/* ===== clients ===== */
 .clients {
   padding: 75px 0 10px;
 }
@@ -822,6 +952,9 @@ select {
   }
 }
 
+/* ===== clients end ===== */
+/* ============================================================================== */
+/* ===== region ===== */
 .region {
   padding: 50px 0 80px;
 }
@@ -855,6 +988,8 @@ select {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
 }
 
 .region-box__card:hover {
@@ -899,6 +1034,16 @@ select {
   top: 20px;
 }
 
+.region-box__text {
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+.region-box__title {
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
 .region-box__img {
   -ms-flex-item-align: end;
       -ms-grid-row-align: end;
@@ -919,16 +1064,29 @@ select {
   }
 }
 
+/* ===== region end ===== */
+/* ============================================================================== */
+/* ===== callback ===== */
 .callback {
-  background: url(../img/callback__bg.png) center/cover no-repeat;
-  height: 960px;
-  margin-bottom: 230px;
+  padding-bottom: 230px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  position: relative;
+}
+
+.callback__img {
+  width: 100%;
+}
+
+.callback__img img {
+  height: 960px;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .callback__form {
@@ -945,7 +1103,8 @@ select {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  margin-top: 420px;
+  position: absolute;
+  top: 420px;
   height: -webkit-max-content;
   height: -moz-max-content;
   height: max-content;
@@ -1018,6 +1177,9 @@ select {
   margin: 0 auto;
 }
 
+/* ===== callback end ===== */
+/* ============================================================================== */
+/* ===== approved ===== */
 .approved {
   background-color: #fafafa;
   padding: 150px 0 160px;
@@ -1070,6 +1232,9 @@ select {
   }
 }
 
+/* ===== approved end ===== */
+/* ============================================================================== */
+/* ===== resources ===== */
 .resources {
   padding: 150px 0 160px;
 }
@@ -1150,6 +1315,9 @@ select {
   }
 }
 
+/* ===== resources end ===== */
+/* ============================================================================== */
+/* ===== FAQ ===== */
 .faq {
   padding: 150px 0;
   background-color: #fafafa;
@@ -1208,13 +1376,34 @@ select {
   height: 2px;
   display: block;
   background-color: #000;
+  -webkit-transition: all 1s ease;
+  transition: all 1s ease;
 }
 
 .faq__plus::before {
   -webkit-transform: rotate(90deg);
           transform: rotate(90deg);
+  -webkit-transition: all 1s ease;
+  transition: all 1s ease;
 }
 
+.faq__active .faq__plus::after {
+  -webkit-transform: rotate(-315deg);
+          transform: rotate(-315deg);
+  -webkit-transition: all 1s ease;
+  transition: all 1s ease;
+}
+
+.faq__active .faq__plus::before {
+  -webkit-transform: rotate(315deg);
+          transform: rotate(315deg);
+  -webkit-transition: all 1s ease;
+  transition: all 1s ease;
+}
+
+/* ===== FAQ end ===== */
+/* ============================================================================== */
+/* ===== kickstart ===== */
 .kickstart {
   padding: 150px 0;
 }
@@ -1229,6 +1418,9 @@ select {
   text-align: center;
 }
 
+/* ===== kickstart end ===== */
+/* ============================================================================== */
+/* ===== swiper ===== */
 .slidebar {
   margin-top: 78px;
   position: relative;
@@ -1249,7 +1441,7 @@ select {
 }
 
 .swiper {
-  max-width: 1000px;
+  margin: 0 70px;
 }
 
 .swiper .swiper-slide {
@@ -1262,16 +1454,20 @@ select {
   color: #0a8bfe;
 }
 
-/* ==== main end ==== */
-/* ====================================================== */
-/* ==== footer ==== */
+/* ===== swiper end ===== */
+/* ==== Main end ==== */
+/* ==========================================================================
+07. Footer
+========================================================================== */
 .footer {
   background-color: #0e0e33;
   padding: 100px 0 30px;
 }
 
+/* ============================================================================== */
+/* ===== footer-intro ===== */
 .footer-intro {
-  padding: 10pxs 0 61px;
+  padding: 0 0 61px;
 }
 
 .footer-intro__body {
@@ -1291,6 +1487,9 @@ select {
   color: #fff;
 }
 
+/* ===== footer-intro end ===== */
+/* ============================================================================== */
+/* ===== footer-sitemap ===== */
 .footer-sitemap__body {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1328,8 +1527,19 @@ select {
 .footer-sitemap__link {
   font-size: 15px;
   line-height: 28px;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
 }
 
+.footer-sitemap__link:hover {
+  color: #acacac;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+/* ===== footer-sitemap end ===== */
+/* ============================================================================== */
+/* ===== footer-nav ===== */
 .footer-nav {
   padding: 34px 0 0;
 }
@@ -1360,11 +1570,40 @@ select {
   font-size: 16px;
 }
 
+.footer-nav__link::after {
+  content: "";
+  width: 0;
+  height: 1px;
+  background-color: #fff;
+  display: block;
+  margin-top: 10px;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+  margin: 0 auto;
+}
+
+.footer-nav__item:hover .footer-nav__link::after {
+  width: 100%;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
 .footer-nav__sitemap {
   font-size: 16px;
   color: #fff;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
 }
 
+.footer-nav__sitemap:hover {
+  color: #acacac;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+/* ===== footer-nav end ===== */
+/* ============================================================================== */
+/* ===== footer-media ===== */
 @media (max-width: 992px) {
   .footer-sitemap__body {
     padding: 80px 0;
@@ -1397,5 +1636,5 @@ select {
   }
 }
 
-/* ==== footer end ==== */
-/* ====================================================== */
+/* ===== footer-media end ===== */
+/* ==== Footer end ==== */

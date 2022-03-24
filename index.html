@@ -2,20 +2,33 @@
 <html lang="en">
 
 <head>
+    <!-- Meta-tegs start -->
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Meta-tegs end -->
+    <!-- ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| -->
+    <!-- CSS start -->
     <link rel="stylesheet" href="css/swiper.min.css">
+    <link rel="stylesheet" href="css/animate.css">
     <link rel="stylesheet" href="css/style.css">
+    <!-- CSS end -->
+    <!-- ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| -->
+    <!-- Title start -->
     <title>Appello</title>
+    <!-- Title end -->
 </head>
 
 <body>
-    <div class="preloader">
+    <!-- Preloader start -->
+    <div class="preloader" id="preloader">
         <div class="loading"></div>
     </div>
+    <!-- Preloader end -->
+    <!-- ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| -->
+    <!-- Wrapper start -->
     <div class="wrapper">
-
+        <!-- Header start -->
         <header class="header">
             <nav class="header-nav">
                 <div class="header-nav__container header-nav__body">
@@ -48,23 +61,27 @@
                         <p class="header-intro__text _text">Establishing a technology company takes a strong software
                             team
                             to deliver on what needs to be done.</p>
-                        <a href="#" class="header-intro__button _button">View our work</a>
+                        <a href="#our-works" class="header-intro__button _button">View our work</a>
                     </div>
                 </div>
             </div>
         </header>
-
+        <!-- Header end -->
+        <!-- ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| -->
+        <!-- Main start -->
         <main class="main">
+            <!-- project-desc section start -->
             <section class="project-desc">
                 <div class="project-desc__container">
                     <div class="project-desc__body">
-                        <div class="project-desc__desctiption">
+                        <div class="project-desc__desctiption wow fadeInLeft" data-wow-duration="0.5s"
+                            data-wow-delay="0.5s">
                             <h1 class="project-desc__title _inTitle">Your reliable web and app development partner</h1>
                             <p class="project-desc__text _text">We make successful products that turn great ideas into
                                 user-friendly solutions for consumers and businesses.</p>
                         </div>
                         <span class="project-desc__line"></span>
-                        <ul class="project-desc__list">
+                        <ul class="project-desc__list wow fadeInRight" data-wow-duration="0.5s" data-wow-delay="0.5s">
                             <li class="project-desc__item _text">Completely tailored software.</li>
                             <li class="project-desc__item _text">Daily support with project manager.</li>
                             <li class="project-desc__item _text">Projects delivered on time, always.</li>
@@ -76,7 +93,10 @@
                     </div>
                 </div>
             </section>
-            <section class="your-stage">
+            <!-- project-desc section end -->
+
+            <!-- your-stage section start -->
+            <section class="your-stage wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.5s">
                 <div class="your-stage__container">
                     <div class="your-stage__description">
                         <h2 class="your-stage__title _title">Where are you now?</h2>
@@ -161,37 +181,51 @@
                             </p>
                         </div>
                     </div>
-                    <a href="#" class="your-stage__button _button">Contact us</a>
+                    <a href="#callback" class="your-stage__button _button">Contact us</a>
                 </div>
             </section>
-            <section class="our-works">
+            <!-- your-stage section end -->
+
+            <!-- our-works section start -->
+            <section id="our-works" class="our-works">
                 <div class="projects-stats">
-                    <div class="projects-stats__container">
+                    <div class="projects-stats__container wow fadeIn" data-wow-duration="1s" data-wow-delay="0.5s">
                         <h2 class="projects-stats__title _title">We’re proud of our work</h2>
                         <ul class="projects-stats__list">
-                            <li class="projects-stats__item _title">50+<span
+                            <li class="projects-stats__item _title">
+                                <h3><span class="counterUp">50</span>+</h3><span
                                     class="projects-stats__text _text">Successfully
                                     completed
-                                    projects</span></li>
-                            <li class="projects-stats__item _title">35+<span class="projects-stats__text _text">Happy
+                                    projects</span>
+                            </li>
+                            <li class="projects-stats__item _title">
+                                <h3><span class="counterUp">35</span>+</h3><span
+                                    class="projects-stats__text _text">Happy
                                     and
                                     appreciative
-                                    customers</span></li>
-                            <li class="projects-stats__item _title">10<span class="projects-stats__text _text">Combined
+                                    customers</span>
+                            </li>
+                            <li class="projects-stats__item _title">
+                                <h3><span class="counterUp">10</span></h3><span
+                                    class="projects-stats__text _text">Combined
                                     years of
-                                    experience</span></li>
-                            <li class="projects-stats__item _title">23<span
+                                    experience</h3span>
+                            </li>
+                            <li class="projects-stats__item _title">
+                                <h3><span class="counterUp">23</span></h3><span
                                     class="projects-stats__text _text">Experienced
                                     and
                                     talented
-                                    workers</span></li>
+                                    workers</h3span>
+                            </li>
                         </ul>
                     </div>
                 </div>
                 <div class="our-works__content ourWorks-content">
                     <div class="ourWorks-content__container">
                         <div class="ourWorks-content__body">
-                            <div class="ourWorks-content__card ourWorks-card">
+                            <div class="ourWorks-content__card ourWorks-card wow fadeInLeft" data-wow-duration="1s"
+                                data-wow-delay="0.5s">
                                 <div class="ourWorks-card__img"><img src="img/projects-stats/IMAGE.png" alt=""></div>
                                 <div class="ourWorks-card__description">
                                     <h3 class="ourWorks-card__title _inTitle">Eyetelligence – AI-based Eye Health</h3>
@@ -202,7 +236,8 @@
                                         has just been released.</p>
                                 </div>
                             </div>
-                            <div class="ourWorks-content__card ourWorks-card">
+                            <div class="ourWorks-content__card ourWorks-card wow fadeInDown" data-wow-duration="1s"
+                                data-wow-delay="0.5s">
                                 <div class="ourWorks-card__img"><img src="img/projects-stats/IMAGE-1.png" alt=""></div>
                                 <div class="ourWorks-card__description">
                                     <h3 class="ourWorks-card__title _inTitle">Give + Get is a modern charity app. </h3>
@@ -212,7 +247,8 @@
                                         rewards they offer; “Get”.</p>
                                 </div>
                             </div>
-                            <div class="ourWorks-content__card ourWorks-card">
+                            <div class="ourWorks-content__card ourWorks-card wow fadeInUp" data-wow-duration="1s"
+                                data-wow-delay="0.5s">
                                 <div class="ourWorks-card__img"><img src="img/projects-stats/IMAGE-2.png" alt=""></div>
                                 <div class="ourWorks-card__description">
                                     <h3 class="ourWorks-card__title _inTitle">Voken – Shared Childcare App</h3>
@@ -221,7 +257,8 @@
                                         they trust, earn tokens and use for your own requests.</p>
                                 </div>
                             </div>
-                            <div class="ourWorks-content__card ourWorks-card">
+                            <div class="ourWorks-content__card ourWorks-card wow fadeInRight" data-wow-duration="1s"
+                                data-wow-delay="0.5s">
                                 <div class="ourWorks-card__img"><img src="img/projects-stats/IMAGE-3.png" alt=""></div>
                                 <div class="ourWorks-card__description">
                                     <h3 class="ourWorks-card__title _inTitle">Chattii – Disability Dating App</h3>
@@ -233,18 +270,21 @@
                                 </div>
                             </div>
                         </div>
-                        <a href="" class="ourWorks-content__button _button">See more</a>
+                        <a href="#" class="ourWorks-content__button _button">See more</a>
 
                     </div>
                 </div>
             </section>
+            <!-- our-works section end -->
+
+            <!-- clients section start -->
             <section class="clients">
                 <div class="clients__container">
                     <h3 class="clients__title _title">We value our relationships</h3>
                     <p class="clients__text _text">Over the past decade, Appello has established itself as a leader in
                         the IT industry. Along the way, we have formed a number of valued relationships with both
                         clients and business partners.</p>
-                    <div class="clients__box">
+                    <div class="clients__box wow fadeIn" data-wow-duration="1s" data-wow-delay="0.5s">
                         <div class="clients__item"><img src="img/Partners-logos/IMAGE.svg" alt="Partner`s logotype">
                         </div>
                         <div class="clients__item"><img src="img/Partners-logos/IMAGE-1.svg" alt="Partner`s logotype">
@@ -266,11 +306,15 @@
                 </div>
 
             </section>
-            <section class="region">
+            <!-- clients section end -->
+
+            <!-- region section start -->
+            <section id="region" class="region">
                 <div class="region__container">
                     <h4 class="region__title _title">Regional partnerships</h4>
                     <div class="region__box region-box">
-                        <div class="region-box__card">
+                        <a href="#region" class="region-box__card wow fadeInDown" data-wow-duration="1s"
+                            data-wow-delay="0.5s">
                             <div class="region-box__description">
                                 <p class="region-box__text _text">App Development</p>
                                 <p class="region-box__title _inTitle">Sydney</p>
@@ -284,8 +328,9 @@
                                         fill="#0A8BFE"></path>
                                 </svg>
                             </div>
-                        </div>
-                        <div class="region-box__card">
+                        </a>
+                        <a href="#region" class="region-box__card wow fadeInDown" data-wow-duration="1s"
+                            data-wow-delay="0.5s">
                             <div class="region-box__description">
                                 <p class="region-box__text _text">App Development</p>
                                 <p class="region-box__title _inTitle">Brisbane</p>
@@ -298,8 +343,9 @@
                                         fill="#0A8BFE"></path>
                                 </svg>
                             </div>
-                        </div>
-                        <div class="region-box__card">
+                        </a>
+                        <a href="#region" class="region-box__card wow fadeInDown" data-wow-duration="1s"
+                            data-wow-delay="0.5s">
                             <div class="region-box__description">
                                 <p class="region-box__text _text">App Development</p>
                                 <p class="region-box__title _inTitle">Goldcoast</p>
@@ -312,8 +358,9 @@
                                         fill="#0A8BFE"></path>
                                 </svg>
                             </div>
-                        </div>
-                        <div class="region-box__card">
+                        </a>
+                        <a href="#region" class="region-box__card wow fadeInUp" data-wow-duration="1s"
+                            data-wow-delay="0.5s">
                             <div class="region-box__description">
                                 <p class="region-box__text _text">App Development</p>
                                 <p class="region-box__title _inTitle">Adelaide</p>
@@ -326,9 +373,10 @@
                                         fill="#0A8BFE"></path>
                                 </svg>
                             </div>
-                        </div>
-                        <div class="region-box__card">
-                            <div class="region-box__description">
+                        </a>
+                        <a href="#region" class="region-box__card wow fadeInUp" data-wow-duration="1s"
+                            data-wow-delay="0.5s">
+                            <div class=" region-box__description">
                                 <p class="region-box__text _text">App Development</p>
                                 <p class="region-box__title _inTitle">Melbourne</p>
                                 <div class="region-box__arrow"><img src="img/arrow-2.svg" alt="Arrow"></div>
@@ -340,9 +388,10 @@
                                         fill="#0A8BFE"></path>
                                 </svg>
                             </div>
-                        </div>
-                        <div class="region-box__card">
-                            <div class="region-box__description">
+                        </a>
+                        <a href="#region" class="region-box__card wow fadeInUp" data-wow-duration="1s"
+                            data-wow-delay="0.5s">
+                            <div class=" region-box__description">
                                 <p class="region-box__text _text">App Development</p>
                                 <p class="region-box__title _inTitle">Canberra</p>
                                 <div class="region-box__arrow"><img src="img/arrow-2.svg" alt="Arrow"></div>
@@ -354,21 +403,28 @@
                                         fill="#0A8BFE"></path>
                                 </svg>
                             </div>
-                        </div>
+                        </a>
                     </div>
                 </div>
             </section>
-            <section class="callback">
-                <form action="" class="callback__form">
+            <!-- region section end -->
+
+            <!-- callback section start -->
+            <section id="callback" class="callback">
+                <div class="callback__img"><img src="img/callback__bg.png" alt="Callback background image"></div>
+                <form action="" class="callback__form wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.5">
                     <h4 class="callback__title _inTitle">Request a callback from our <br> expert team</h4>
                     <input type="text" class="callback__input" placeholder="Required sevice*">
                     <textarea name="" class="callback__textarea" placeholder="Details*"></textarea>
                     <a href="#" class="callback__button _button">Send request</a>
                 </form>
             </section>
+            <!-- callback section end -->
+
+            <!-- approved section start -->
             <section class="approved">
                 <div class="approved__container">
-                    <div class="approved__body">
+                    <div class="approved__body wow fadeInLeft" data-wow-duration="1s" data-wow-delay="0.5s">
                         <h4 class="approved__title _title">We're industry approved</h4>
                         <p class="approved__text _text">Appello is one of Australia’s most highly rated software
                             companies by recognisable directories like Clutch, GoodFirms, AppFutura and many more.</p>
@@ -381,6 +437,9 @@
                     </div>
                 </div>
             </section>
+            <!-- approved section end -->
+
+            <!-- resources section start -->
             <section class="resources">
                 <div class="resources__container">
                     <div class="resources__body">
@@ -388,7 +447,7 @@
                         <p class="resources__text _text">Sharing the latest and greatest from industry trends, insights,
                             inspiration and successful Appello ventures.</p>
                         <div class="resources__box resources-box">
-                            <div class="resources-box__item">
+                            <div class="resources-box__item wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.5s">
                                 <div class="resources-box__img"><img src="img/resourses/IMAGE.png" alt="Resourses">
                                 </div>
                                 <div class="resources-box__description">
@@ -398,7 +457,7 @@
                                         Woghiren.</p>
                                 </div>
                             </div>
-                            <div class="resources-box__item">
+                            <div class="resources-box__item wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.5s">
                                 <div class="resources-box__img"><img src="img/resourses/IMAGE-1.png" alt="Resourses">
                                 </div>
                                 <div class="resources-box__description">
@@ -409,7 +468,7 @@
                                     </p>
                                 </div>
                             </div>
-                            <div class="resources-box__item">
+                            <div class="resources-box__item wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.5s">
                                 <div class="resources-box__img"><img src="img/resourses/IMAGE-2.png" alt="Resourses">
                                 </div>
                                 <div class="resources-box__description">
@@ -424,13 +483,16 @@
                     </div>
                 </div>
             </section>
+            <!-- resources section end -->
+
+            <!-- FAQ section start -->
             <section class="faq">
-                <div class="faq__container">
+                <div class=" faq__container">
                     <div class="faq__body">
                         <h4 class="faq__title _title">FAQ</h4>
                         <p class="faq__text _text">Below is a list of frequently asked questions. If you can't find what
                             you’re looking for then feel free to ask us directly via <a href="#">email</a></p>
-                        <ul class="faq__list">
+                        <ul class="faq__list wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.5s">
                             <li id="faq-1" onclick="showFaq('faq-1')" class="faq__item">1. What is your privacy and
                                 security
                                 policy?<a class="faq__plus"></a>
@@ -479,9 +541,12 @@
                     </div>
                 </div>
             </section>
+            <!-- FAQ section end -->
+
+            <!-- kickstart section start -->
             <section class="kickstart">
                 <div class="kickstart__container">
-                    <h4 class="kickstart__title _title">kickstart your tech career</h4>
+                    <h4 class="kickstart__title _title">Kickstart your tech career</h4>
                     <p class="kickstart__text _text">We're always on the lookout for bright strategic minds, creative
                         superstars and coding gurus. Select one of our current opportunities below to apply.</p>
                     <div class="slidebar">
@@ -503,14 +568,17 @@
                     </div>
                 </div>
             </section>
+            <!-- kickstart section end -->
         </main>
-
+        <!-- Main end -->
+        <!-- ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| -->
+        <!-- Footer start -->
         <footer class="footer">
             <div class="footer-intro">
                 <div class="footer-intro__container">
                     <div class="footer-intro__body">
                         <p class="footer-intro__text _text">Trusted by businesses worldwide.</p>
-                        <div class="footer-intro__logo"><img src="img/logo.svg" alt=""></div>
+                        <a href="#" class="footer-intro__logo"><img src="img/logo.svg" alt=""></a>
                     </div>
                 </div>
             </div>
@@ -563,7 +631,7 @@
                             <ul class="footer-sitemap__list">
                                 <li class="footer-sitemap__item">Email: <a href="mailto:admin@hophni.ga"
                                         class="footer-sitemap__link"> admin@hophni.ga</a></li>
-                                <li class="footer-sitemap__item">Sydney:<a href="tel:(+61) 027 202 5164"
+                                <li class="footer-sitemap__item">Sydney: <a href="tel:(+61) 027 202 5164"
                                         class="footer-sitemap__link">(+61) 027 202 5164</a></li>
                                 <li class="footer-sitemap__item">London: <a href="tel:(+44) 203 608 3126"
                                         class="footer-sitemap__link">(+44) 203 608 3126</a></li>
@@ -590,15 +658,24 @@
                 </div>
             </nav>
         </footer>
-
+        <!-- Footer end -->
+        <!-- ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| -->
+        <!-- Arrow start -->
+        <a href="#" class="back-to-top" style="display: inline;">
+            <span class="arrow-up"></span>
+        </a>
+        <!-- Arrow end -->
     </div>
-
+    <!-- Wrapper end -->
+    <!-- ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| -->
+    <!-- JS start -->
     <script src="js/swiper-bundle.min.js"></script>
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
-        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
-
+    <script src="js/jquery-min.js"></script>
+    <script src="js/waypoints.min.js"></script>
+    <script src="js/jquery.counterup.min.js"></script>
+    <script src="js/wow.js"></script>
     <script src="js/main.js"></script>
-
+    <!-- JS end -->
 </body>
 
 </html>

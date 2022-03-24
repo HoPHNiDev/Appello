@@ -1,13 +1,17 @@
+/* Preloader */
 window.onload = function () {
     window.setTimeout(function () {
         document.body.classList.add('loaded');
+        window.setTimeout(function () {
+            document.getElementById('preloader').remove();
+        }, 1000);
     }, 500);
-}
+};
 
+/* Swiper */
 const swiper = new Swiper('.swiper', {
     // Optional parameters
     loop: true,
-    slidesPerView: 4,
     // Navigation arrows
     navigation: {
         nextEl: '.swiper-button_next',
@@ -17,10 +21,28 @@ const swiper = new Swiper('.swiper', {
         delay: 3000,
         disableOnInteraction: false,
     },
-    spaceBetween: 13,
     speed: 500,
+    breakpoints: {
+        300: {
+            slidesPerView: 1,
+            spaceBetween: 13
+        },
+        768: {
+            slidesPerView: 2,
+            spaceBetween: 13
+        },
+        992: {
+            slidesPerView: 3,
+            spaceBetween: 13
+        },
+        1024: {
+            slidesPerView: 4,
+            spaceBetween: 13
+        }
+    }
 });
 
+/* Header-fix */
 $(function () {
     $nav = $('.header-nav');
     $window = $(window);
@@ -33,6 +55,39 @@ $(function () {
         }
     });
 });
+
+/* Counter */
+$('.counterUp').counterUp({
+    delay: 10,
+    time: 2000
+});
+/* Back-to-top */
+var offset = 200;
+var duration = 500;
+$(window).scroll(function () {
+    if ($(this).scrollTop() > offset) {
+        $('.back-to-top').fadeIn(400);
+    } else {
+        $('.back-to-top').fadeOut(400);
+    }
+});
+$('.back-to-top').on('click', function (event) {
+    event.preventDefault();
+    $('html, body').animate({
+        scrollTop: 0
+    }, 600);
+    return false;
+});
+
+/* Wow */
+var wow = new WOW({
+    //disabled for mobile
+    mobile: false
+});
+
+wow.init();
+
+/* ChangeActiveTab */
 var idActiveTab = 1;
 
 function changeActiveTab(a) {
@@ -43,6 +98,7 @@ function changeActiveTab(a) {
     idActiveTab = a;
 }
 
+/* ShowNavBar */
 function showNavBar() {
     var NavBar = document.getElementById('NavBar');
     if (NavBar.classList.contains('header-nav__active')) {
@@ -52,6 +108,7 @@ function showNavBar() {
     }
 }
 
+/* ShowFAQ */
 function showFaq(a) {
     var faqId = document.getElementById(a);
     if (faqId.classList.contains('faq__active')) {
