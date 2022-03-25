@@ -20,12 +20,9 @@
 </head>
 
 <body>
-    <!-- Preloader start -->
     <div class="preloader" id="preloader">
         <div class="loading"></div>
     </div>
-    <!-- Preloader end -->
-    <!-- ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| -->
     <!-- Wrapper start -->
     <div class="wrapper">
         <!-- Header start -->
@@ -96,7 +93,7 @@
             <!-- project-desc section end -->
 
             <!-- your-stage section start -->
-            <section class="your-stage wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.5s">
+            <section class="your-stage">
                 <div class="your-stage__container">
                     <div class="your-stage__description">
                         <h2 class="your-stage__title _title">Where are you now?</h2>
@@ -111,22 +108,22 @@
                         <a id="3" onclick="changeActiveTab(3)" class="stage-tabs__text _inTitle">Launch</a>
                     </div>
                     <div id="tab-1" class="your-stage__body stage-body stage-body__active">
-                        <div class="stage-body__item">
+                        <div class="stage-body__item wow fadeInLeft" data-wow-duration="1s" data-wow-delay="0.5s">
                             <p class="stage-body__title">1. Research</p>
                             <p class="stage-body__text">We can help you to better understand your target audience,
                                 enabling you to create a more powerful value proposition for your business.</p>
                         </div>
-                        <div class="stage-body__item">
+                        <div class="stage-body__item wow fadeInRight" data-wow-duration="1s" data-wow-delay="0.5s">
                             <p class="stage-body__title">2. Requirements</p>
                             <p class="stage-body__text">Based on research insights, we can help you to determine how
                                 your product and service should function.</p>
                         </div>
-                        <div class="stage-body__item">
+                        <div class="stage-body__item wow fadeInLeft" data-wow-duration="1s" data-wow-delay="0.5s">
                             <p class="stage-body__title">3. UI Design</p>
                             <p class="stage-body__text">We’re able to create unique and aesthetically pleasing visual
                                 design solutions that fulfil both your user needs and business goals.</p>
                         </div>
-                        <div class="stage-body__item">
+                        <div class="stage-body__item wow fadeInRight" data-wow-duration="1s" data-wow-delay="0.5s">
                             <p class="stage-body__title">4. Prototyping</p>
                             <p class="stage-body__text">We can provide you with a clickable prototype so you can test
                                 and play with your product; allowing you to get a better feel for the user experience.
@@ -228,7 +225,8 @@
                                 data-wow-delay="0.5s">
                                 <div class="ourWorks-card__img"><img src="img/projects-stats/IMAGE.png" alt=""></div>
                                 <div class="ourWorks-card__description">
-                                    <h3 class="ourWorks-card__title _inTitle">Eyetelligence – AI-based Eye Health</h3>
+                                    <a href="#" class="ourWorks-card__title _inTitle">Eyetelligence – AI-based Eye
+                                        Health</a>
                                     <p class="ourWorks-card__text _text">Eyetelligence is a medtech company using AI
                                         based
                                         software to recognise eye diseases. Appello software developed their website
@@ -240,7 +238,8 @@
                                 data-wow-delay="0.5s">
                                 <div class="ourWorks-card__img"><img src="img/projects-stats/IMAGE-1.png" alt=""></div>
                                 <div class="ourWorks-card__description">
-                                    <h3 class="ourWorks-card__title _inTitle">Give + Get is a modern charity app. </h3>
+                                    <a href="#" class="ourWorks-card__title _inTitle">Give + Get is a modern charity
+                                        app. </a>
                                     <p class="ourWorks-card__text _text">“Give”, while joining a community of active
                                         people who complete challenges and
                                         reap the
@@ -251,7 +250,7 @@
                                 data-wow-delay="0.5s">
                                 <div class="ourWorks-card__img"><img src="img/projects-stats/IMAGE-2.png" alt=""></div>
                                 <div class="ourWorks-card__description">
-                                    <h3 class="ourWorks-card__title _inTitle">Voken – Shared Childcare App</h3>
+                                    <a href="#" class="ourWorks-card__title _inTitle">Voken – Shared Childcare App</a>
                                     <p class="ourWorks-card__text _text">Voken lets people arrange childcare with
                                         families
                                         they trust, earn tokens and use for your own requests.</p>
@@ -261,7 +260,8 @@
                                 data-wow-delay="0.5s">
                                 <div class="ourWorks-card__img"><img src="img/projects-stats/IMAGE-3.png" alt=""></div>
                                 <div class="ourWorks-card__description">
-                                    <h3 class="ourWorks-card__title _inTitle">Chattii – Disability Dating App</h3>
+                                    <a href="#" class="ourWorks-card__title _inTitle">Chattii – Disability Dating
+                                        App</a>
                                     <p class="ourWorks-card__text _text">Chattii is born from the need to provide a
                                         space
                                         for people living with disabilities to connect, chat, and explore their love
@@ -412,12 +412,14 @@
             <!-- callback section start -->
             <section id="callback" class="callback">
                 <div class="callback__img"><img src="img/callback__bg.png" alt="Callback background image"></div>
-                <form action="" class="callback__form wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.5">
-                    <h4 class="callback__title _inTitle">Request a callback from our <br> expert team</h4>
-                    <input type="text" class="callback__input" placeholder="Required sevice*">
-                    <textarea name="" class="callback__textarea" placeholder="Details*"></textarea>
-                    <a href="#" class="callback__button _button">Send request</a>
-                </form>
+                <div class="callback__body">
+                    <form action="" class="callback__form wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.5">
+                        <h4 class="callback__title _inTitle">Request a callback from our <br> expert team</h4>
+                        <input type="text" class="callback__input" placeholder="Required sevice*">
+                        <textarea name="" class="callback__textarea" placeholder="Details*"></textarea>
+                        <button type="submit" class="callback__button _button">Send request</button>
+                    </form>
+                </div>
             </section>
             <!-- callback section end -->
 
@@ -493,48 +495,56 @@
                         <p class="faq__text _text">Below is a list of frequently asked questions. If you can't find what
                             you’re looking for then feel free to ask us directly via <a href="#">email</a></p>
                         <ul class="faq__list wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.5s">
-                            <li id="faq-1" onclick="showFaq('faq-1')" class="faq__item">1. What is your privacy and
-                                security
-                                policy?<a class="faq__plus"></a>
+                            <li id="faq-1" onclick="showFaq('faq-1')" class="faq__item">
+                                <p class="faq__question">1. What is your privacy and
+                                    security
+                                    policy?</p><span class="faq__plusBlock"><span class="faq__plus"></span></span>
                                 <p class="faq__answer">Lorem ipsum dolor sit amet consectetur adipisicing elit.
                                     Accusantium, dolorum. Sed repudiandae eius illum, tempore minima reiciendis
                                     accusamus blanditiis tenetur, quidem expedita nostrum provident ut, cum praesentium
                                     pariatur facere dignissimos.</p>
                             </li>
-                            <li id="faq-2" onclick="showFaq('faq-2')" class="faq__item">2. How long is the development
-                                timeline?<a class="faq__plus"></a>
+                            <li id="faq-2" onclick="showFaq('faq-2')" class="faq__item">
+                                <p class="faq__question">2. How long is the development
+                                    timeline?</p><span class="faq__plusBlock"><span class="faq__plus"></span></span>
                                 <p class="faq__answer">Lorem ipsum dolor sit amet consectetur adipisicing elit.
                                     Accusantium, dolorum. Sed repudiandae eius illum, tempore minima reiciendis
                                     accusamus blanditiis tenetur, quidem expedita nostrum provident ut, cum praesentium
                                     pariatur facere dignissimos.</p>
                             </li>
-                            <li id="faq-3" onclick="showFaq('faq-3')" class="faq__item">3. What type of companies do you
-                                work
-                                with?<a class="faq__plus"></a>
+                            <li id="faq-3" onclick="showFaq('faq-3')" class="faq__item">
+                                <p class="faq__question">3. What type of companies do you
+                                    work
+                                    with?</p><span class="faq__plusBlock"><span class="faq__plus"></span></span>
                                 <p class="faq__answer">Lorem ipsum dolor sit amet consectetur adipisicing elit.
                                     Accusantium, dolorum. Sed repudiandae eius illum, tempore minima reiciendis
                                     accusamus blanditiis tenetur, quidem expedita nostrum provident ut, cum praesentium
                                     pariatur facere dignissimos.</p>
                             </li>
-                            <li id="faq-4" onclick="showFaq('faq-4')" class="faq__item">4. How many team members for a
-                                project?<a class="faq__plus"></a>
+                            <li id="faq-4" onclick="showFaq('faq-4')" class="faq__item">
+                                <p class="faq__question">4. How many team members for a
+                                    project?</p><span class="faq__plusBlock"><span class="faq__plus"></span></span>
                                 <p class="faq__answer">Lorem ipsum dolor sit amet consectetur adipisicing elit.
                                     Accusantium, dolorum. Sed repudiandae eius illum, tempore minima reiciendis
                                     accusamus blanditiis tenetur, quidem expedita nostrum provident ut, cum praesentium
                                     pariatur facere dignissimos.</p>
                             </li>
-                            <li id="faq-5" onclick="showFaq('faq-5')" class="faq__item">5. What warranties are to ensure
-                                deliverables are met?<a class="faq__plus"></a>
+                            <li id="faq-5" onclick="showFaq('faq-5')" class="faq__item">
+                                <p class="faq__question">5. What warranties are to ensure
+                                    deliverables are met?</p><span class="faq__plusBlock"><span
+                                        class="faq__plus"></span></span>
                                 <p class="faq__answer">Lorem ipsum dolor sit amet consectetur adipisicing elit.
                                     Accusantium, dolorum. Sed repudiandae eius illum, tempore minima reiciendis
                                     accusamus blanditiis tenetur, quidem expedita nostrum provident ut, cum praesentium
                                     pariatur facere dignissimos.</p>
                             </li>
-                            <li id="faq-6" onclick="showFaq('faq-6')" class="faq__item">6. Do you outsource work?<a
-                                    class="faq__plus"></a>
+                            <li id="faq-6" onclick="showFaq('faq-6')" class="faq__item">
+                                <p class="faq__question">6. Do you outsource work?</p><span class="faq__plusBlock"><span
+                                        class="faq__plus"></span></span>
                                 <p class="faq__answer">Lorem ipsum dolor sit amet consectetur adipisicing elit.
                                     Accusantium, dolorum. Sed repudiandae eius illum, tempore minima reiciendis
-                                    accusamus blanditiis tenetur, quidem expedita nostrum provident ut, cum praesentium
+                                    accusamus blanditiis tenetur, quidem expedita nostrum provident ut, cum
+                                    praesentium
                                     pariatur facere dignissimos.</p>
                             </li>
                         </ul>
